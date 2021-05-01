@@ -1,0 +1,17 @@
+C:\Users\Lenovo\Desktop\José Diego Datos\UPN\VIII CICLO\DISEÑO Y ARQUITECTURA DE SOFTWARE\Proyecto NominaSoft\SolucionNominaSoftT2\CapaDominio\bin\Debug\CapaDominio.dll
+C:\Users\Lenovo\Desktop\José Diego Datos\UPN\VIII CICLO\DISEÑO Y ARQUITECTURA DE SOFTWARE\Proyecto NominaSoft\SolucionNominaSoftT2\CapaDominio\bin\Debug\CapaDominio.pdb
+C:\Users\Lenovo\Desktop\José Diego Datos\UPN\VIII CICLO\DISEÑO Y ARQUITECTURA DE SOFTWARE\Proyecto NominaSoft\SolucionNominaSoftT2\CapaDominio\obj\Debug\CapaDominio.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\José Diego Datos\UPN\VIII CICLO\DISEÑO Y ARQUITECTURA DE SOFTWARE\Proyecto NominaSoft\SolucionNominaSoftT2\CapaDominio\obj\Debug\CapaDominio.dll
+C:\Users\Lenovo\Desktop\José Diego Datos\UPN\VIII CICLO\DISEÑO Y ARQUITECTURA DE SOFTWARE\Proyecto NominaSoft\SolucionNominaSoftT2\CapaDominio\obj\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoftT-V 2.0\CapaDominio\bin\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoftT-V 2.0\CapaDominio\bin\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoftT-V 2.0\CapaDominio\obj\Debug\CapaDominio.csprojAssemblyReference.cache
+D:\Documents\UPN\SolucionNominaSoftT-V 2.0\CapaDominio\obj\Debug\CapaDominio.csproj.CoreCompileInputs.cache
+D:\Documents\UPN\SolucionNominaSoftT-V 2.0\CapaDominio\obj\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoftT-V 2.0\CapaDominio\obj\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\CapaDominio\bin\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\CapaDominio\bin\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.csprojAssemblyReference.cache
+D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.csproj.CoreCompileInputs.cache
+D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.pdb
