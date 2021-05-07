@@ -48,3 +48,17 @@ D:\Documents\UPN\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\Capa
 D:\Documents\UPN\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.csproj.CopyComplete
 D:\Documents\UPN\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.exe
 D:\Documents\UPN\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaPresentacion.WindowsForms.exe.config
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaPresentacion.WindowsForms.exe
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaPresentacion.WindowsForms.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaAplicacion.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaAplicacion.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.csprojAssemblyReference.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.Properties.Resources.resources
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.csproj.GenerateResource.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.csproj.CoreCompileInputs.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.csproj.CopyComplete
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.exe
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.pdb

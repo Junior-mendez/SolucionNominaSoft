@@ -25,7 +25,7 @@ namespace CapaDominio.Entidades
         }
         public BoletaDePago(Contrato contrato, PeriodoDePago periodoDePago)
         {
-            this.Contrato = contrato;
+            this.contrato = contrato;
             this.PeriodoDePago = periodoDePago;
         }
 
@@ -67,13 +67,13 @@ namespace CapaDominio.Entidades
 
         public double CalcularTotalDescuento()//r11
         {
-            return Contrato.CalcularDescuentosAfp (CalcularSueldoBasico())/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
+            return contrato.CalcularDescuentosAfp (CalcularSueldoBasico())/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
         }
 
 
         public double CalcularTotalDeHoras()//r13
         {
-            return PeriodoDePago.SemanasDelPeriodo * Contrato.HorasSemana;
+            return PeriodoDePago.SemanasDelPeriodo * contrato.HorasSemana;
         }
 
         public double CalcularTotalDeIngresos()//r9

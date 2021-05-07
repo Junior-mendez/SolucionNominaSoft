@@ -15,3 +15,9 @@ D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.csprojAsse
 D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.csproj.CoreCompileInputs.cache
 D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.dll
 D:\Documents\UPN\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\bin\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\bin\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.csprojAssemblyReference.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.csproj.CoreCompileInputs.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\obj\Debug\CapaDominio.pdb

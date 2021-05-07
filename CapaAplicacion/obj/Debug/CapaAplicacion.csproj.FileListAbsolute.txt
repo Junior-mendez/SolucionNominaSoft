@@ -30,3 +30,14 @@ D:\Documents\UPN\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.cspr
 D:\Documents\UPN\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.csproj.CopyComplete
 D:\Documents\UPN\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.dll
 D:\Documents\UPN\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\bin\Debug\CapaAplicacion.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\bin\Debug\CapaAplicacion.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\bin\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\bin\Debug\CapaPersistencia.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\bin\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\bin\Debug\CapaPersistencia.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.csprojAssemblyReference.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.csproj.CoreCompileInputs.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.csproj.CopyComplete
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\obj\Debug\CapaAplicacion.pdb

@@ -24,3 +24,12 @@ D:\Documents\UPN\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.
 D:\Documents\UPN\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.csproj.CopyComplete
 D:\Documents\UPN\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.dll
 D:\Documents\UPN\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\bin\Debug\CapaDominio.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\bin\Debug\CapaDominio.pdb
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.csprojAssemblyReference.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.csproj.CoreCompileInputs.cache
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.csproj.CopyComplete
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
