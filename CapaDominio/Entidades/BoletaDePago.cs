@@ -28,6 +28,15 @@ namespace CapaDominio.Entidades
             this.contrato = contrato;
             this.PeriodoDePago = periodoDePago;
         }
+        public BoletaDePago(Contrato contrato)
+        {
+            this.contrato = contrato;
+        }
+        public BoletaDePago(Contrato contrato, ConceptoDeIngresoDescuento conceptoDeIngresoDescuento)
+        {
+            this.contrato = contrato;
+            this.ConceptoDeIngresoDescuento = conceptoDeIngresoDescuento;
+        }
 
         public double AsignacionFamiliar { get => asignacionFamiliar; set => asignacionFamiliar = value; }
         public string FechaDeEmision { get => fechaDeEmision; set => fechaDeEmision = value; }

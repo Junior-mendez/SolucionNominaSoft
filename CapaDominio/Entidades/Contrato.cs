@@ -18,8 +18,14 @@ namespace CapaDominio.Entidades
         private Boolean estado;
         private Empleado empleado;
         private Afp afp;
-        
 
+        public Contrato(Afp afp)
+        {
+            this.Afp = afp;
+        }
+        public Contrato()
+        {
+        }
         public bool AsignacionFamiliar { get => asignacionFamiliar; set => asignacionFamiliar = value; }
         public string Cargo { get => cargo; set => cargo = value; }
         public int Codigo { get => codigo; set => codigo = value; }
@@ -28,8 +34,8 @@ namespace CapaDominio.Entidades
         public int HorasSemana { get => horasSemana; set => horasSemana = value; }
         public int PagoPorHora { get => pagoPorHora; set => pagoPorHora = value; }
         
-        internal Empleado Empleado { get => empleado; set => empleado = value; }
-        internal Afp Afp { get => afp; set => afp = value; }
+        public Empleado Empleado { get => empleado; set => empleado = value; }
+        public Afp Afp { get => afp; set => afp = value; }
         public bool Estado { get => estado; set => estado = value; }
 
         //reglas de negocio
@@ -49,7 +55,7 @@ namespace CapaDominio.Entidades
         public Double CalcularDescuentosAfp(Double sueldoBasico)
         {
             Double descuentoAFp;
-            descuentoAFp = sueldoBasico * Afp.PorcentajeAfp;
+            descuentoAFp = sueldoBasico * (Afp.PorcentajeAfp/100);
             return descuentoAFp;
         }
 
