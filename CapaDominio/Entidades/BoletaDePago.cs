@@ -10,8 +10,8 @@ namespace CapaDominio.Entidades
     {
         private double asignacionFamiliar;
         private String fechaDeEmision;
-        private double sueldoBasico;
-        private double sueldoNeto;
+        //private double sueldoBasico;
+        //private double sueldoNeto;
         private double totalDeDescuentos;
         private double totalDeHoras;
         private double totalDeIngresos;
@@ -40,8 +40,8 @@ namespace CapaDominio.Entidades
 
         public double AsignacionFamiliar { get => asignacionFamiliar; set => asignacionFamiliar = value; }
         public string FechaDeEmision { get => fechaDeEmision; set => fechaDeEmision = value; }
-        public double SueldoBasico { get => sueldoBasico; set => sueldoBasico = value; }
-        public double SueldoNeto { get => sueldoNeto; set => sueldoNeto = value; }
+        //public double SueldoBasico { get => sueldoBasico; set => sueldoBasico = value; }
+        //public double SueldoNeto { get => sueldoNeto; set => sueldoNeto = value; }
         public double TotalDeDescuentos { get => totalDeDescuentos; set => totalDeDescuentos = value; }
         public double TotalDeHoras { get => totalDeHoras; set => totalDeHoras = value; }
         public double TotalDeIngresos { get => totalDeIngresos; set => totalDeIngresos = value; }
@@ -82,7 +82,7 @@ namespace CapaDominio.Entidades
 
         public double CalcularTotalDeHoras()//r13
         {
-            return PeriodoDePago.SemanasDelPeriodo * contrato.HorasSemana;
+            return PeriodoDePago.CalcularSemanasPeriodo() * contrato.HorasSemana;
         }
 
         public double CalcularTotalDeIngresos()//r9

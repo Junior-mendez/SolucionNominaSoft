@@ -29,11 +29,11 @@ namespace CapaDominio.Servicios
         {
             BoletaDePago boleta = new BoletaDePago(contrato,periodo);
             boleta.TotalDeHoras= boleta.CalcularTotalDeHoras();//r13
-            boleta.SueldoBasico = boleta.CalcularSueldoBasico();//r7
+            //boleta.SueldoBasico = boleta.CalcularSueldoBasico();//r7
             boleta.AsignacionFamiliar = boleta.CalcularAsignacionFamiliar();//r8
             boleta.TotalDeDescuentos = boleta.CalcularTotalDescuento();//r11
             boleta.TotalDeIngresos = boleta.CalcularTotalDeIngresos();//r9
-            boleta.SueldoNeto = boleta.CalcularSueldoNeto();//r12
+            //boleta.SueldoNeto = boleta.CalcularSueldoNeto();//r12
 
             return boleta;
         }

@@ -63,10 +63,11 @@ namespace ProyectoNominaSoftTest
             Contrato contrato = new Contrato();
             PeriodoDePago periodo = new PeriodoDePago();
             BoletaDePago boleta = new BoletaDePago(contrato, periodo);
-            boleta.PeriodoDePago.SemanasDelPeriodo = 5;
+            boleta.PeriodoDePago.FechaFin =new DateTime(2021,05,31);
+            boleta.PeriodoDePago.FechaInicio =new DateTime(2021,05,01);
             boleta.Contrato.HorasSemana = 4;
             Double totaldeHoras = boleta.CalcularTotalDeHoras();
-            Double totaldeHorasEsperado = 20;
+            Double totaldeHorasEsperado = 16;
             Assert.AreEqual(totaldeHoras, totaldeHorasEsperado);
         }
         [TestMethod]

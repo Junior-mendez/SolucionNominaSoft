@@ -11,12 +11,12 @@ namespace CapaDominio.Entidades
         private Boolean Estado;
         private DateTime fechaInicio;
         private DateTime fechaFin;
-        private float semanasDelPeriodo;
+        //private float semanasDelPeriodo;
 
         public bool Estado1 { get => Estado; set => Estado = value; }
         public DateTime FechaInicio { get => fechaInicio; set => fechaInicio = value; }
         public DateTime FechaFin { get => fechaFin; set => fechaFin = value; }
-        public float SemanasDelPeriodo { get => semanasDelPeriodo; set => semanasDelPeriodo = value; }
+        //public float SemanasDelPeriodo { get => semanasDelPeriodo; set => semanasDelPeriodo = value; }
 
         public Boolean VerificarPeriodoDePago()
         {
@@ -32,7 +32,13 @@ namespace CapaDominio.Entidades
             }
         }
 
-
+        public int CalcularSemanasPeriodo()
+        {
+            TimeSpan difFechas = FechaFin - FechaInicio;
+            int day = difFechas.Days;
+            //Double day = difFechas.TotalDays;
+            return day / 7;
+        }
         //verificar periodo de pago se implementara en la capa persistencia
     }
 }
