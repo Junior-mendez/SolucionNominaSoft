@@ -11,6 +11,7 @@ namespace CapaDominio.Entidades
         private double asignacionFamiliar;
         private String fechaDeEmision;
         //private double sueldoBasico;
+        //Hola mundo
         //private double sueldoNeto;
         private double totalDeDescuentos;
         private double totalDeHoras;
