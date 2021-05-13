@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoletaDePagoTest.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ConceptoDeIngresoDescuentoTest.cs" />
+    <Compile Include="ContratoTest.cs" />
+    <Compile Include="PeriodoDePagoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

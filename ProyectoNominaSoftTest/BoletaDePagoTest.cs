@@ -11,8 +11,7 @@ namespace ProyectoNominaSoftTest
         public void CalcularAsignacionFamiliarTest()
         {
             Contrato contrato = new Contrato();
-            PeriodoDePago periodo = new PeriodoDePago();
-            BoletaDePago boleta = new BoletaDePago(contrato, periodo);
+            BoletaDePago boleta = new BoletaDePago(contrato);
             boleta.Contrato.AsignacionFamiliar = true;
             Double asignacionFam = boleta.CalcularAsignacionFamiliar();
             Double asignacionFamiliar_esperado = 93;
