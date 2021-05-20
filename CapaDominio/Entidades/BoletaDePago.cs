@@ -11,7 +11,6 @@ namespace CapaDominio.Entidades
         private double asignacionFamiliar;
         private String fechaDeEmision;
         //private double sueldoBasico;
-        //Hola mundo
         //private double sueldoNeto;
         private double totalDeDescuentos;
         private double totalDeHoras;
@@ -54,18 +53,17 @@ namespace CapaDominio.Entidades
 
         //reglas
 
-        public double CalcularAsignacionFamiliar()//r8
+      
+
+        public Double CalcularDescuentosAfp(Double sueldoBasico)
         {
-            if(Contrato.AsignacionFamiliar==true)
-                return asignacionFamiliar = 930 * 0.1;
-            asignacionFamiliar = 0;
-            return 0;
+            Double descuentoAFp;
+            descuentoAFp = sueldoBasico * (Contrato.Afp.PorcentajeAfp / 100);
+            return descuentoAFp;
         }
-
-
         public double CalcularSueldoBasico()//r7
         {
-            return totalDeHoras * Contrato.PagoPorHora;
+            return totalDeHoras * Contrato.PagoPorHora  ;
         }
 
 
@@ -77,7 +75,7 @@ namespace CapaDominio.Entidades
 
         public double CalcularTotalDescuento()//r11
         {
-            return contrato.CalcularDescuentosAfp (CalcularSueldoBasico())/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
+            return CalcularDescuentosAfp (CalcularSueldoBasico())/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
         }
 
 
@@ -88,7 +86,7 @@ namespace CapaDominio.Entidades
 
         public double CalcularTotalDeIngresos()//r9
         {
-            return CalcularSueldoBasico() + asignacionFamiliar + ConceptoDeIngresoDescuento.CalcularConceptoIngreso();//r14
+            return CalcularSueldoBasico() + contrato.CalcularAsignacionFamiliar() + ConceptoDeIngresoDescuento.CalcularConceptoIngreso();//r14
         }
         /*
         public override bool Equals(object obj)

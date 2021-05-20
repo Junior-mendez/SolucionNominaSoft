@@ -8,14 +8,16 @@ namespace ProyectoNominaSoftTest
     public class BoletaDePagoTest
     {
         [TestMethod]
-        public void CalcularAsignacionFamiliarTest()
+        public void CalcularDescuentosAfpTest()
         {
-            Contrato contrato = new Contrato();
+            Afp afp = new Afp();
+            Contrato contrato = new Contrato(afp);
             BoletaDePago boleta = new BoletaDePago(contrato);
-            boleta.Contrato.AsignacionFamiliar = true;
-            Double asignacionFam = boleta.CalcularAsignacionFamiliar();
-            Double asignacionFamiliar_esperado = 93;
-            Assert.AreEqual(asignacionFam, asignacionFamiliar_esperado);
+            Double sueldoBasico = 930;
+            contrato.Afp.PorcentajeAfp = 10;
+            Double descuentoAfp = boleta.CalcularDescuentosAfp(sueldoBasico);
+            Double descuentoAfp_esperado = 93;
+            Assert.AreEqual(descuentoAfp, descuentoAfp_esperado);
         }
         [TestMethod]
         public void CalcularSueldoBasicoTest()
@@ -23,10 +25,10 @@ namespace ProyectoNominaSoftTest
             Contrato contrato = new Contrato();
             //PeriodoDePago periodo = new PeriodoDePago();
             BoletaDePago boleta = new BoletaDePago(contrato);
-            boleta.TotalDeHoras = 40;
-            boleta.Contrato.PagoPorHora = 5;
+            boleta.TotalDeHoras = 160;
+            boleta.Contrato.PagoPorHora = 12;
             Double sueldo = boleta.CalcularSueldoBasico();
-            Double sueldo_esperado = 200;
+            Double sueldo_esperado = 1920;
             Assert.AreEqual(sueldo, sueldo_esperado);
         }
         [TestMethod]
@@ -47,14 +49,14 @@ namespace ProyectoNominaSoftTest
             Contrato contrato = new Contrato(afp);
             ConceptoDeIngresoDescuento concepto = new ConceptoDeIngresoDescuento();
             BoletaDePago boleta = new BoletaDePago(contrato, concepto);
-            boleta.TotalDeHoras = 48;
-            boleta.Contrato.PagoPorHora = 10;
-            boleta.ConceptoDeIngresoDescuento.MontoPorHorasAusentes = 3;
-            boleta.ConceptoDeIngresoDescuento.MontoDeOtrosDescuentos = 1;
-            boleta.ConceptoDeIngresoDescuento.MontoPorAdelantos = 1;
+            boleta.TotalDeHoras = 160;
+            boleta.Contrato.PagoPorHora = 12;
+            boleta.ConceptoDeIngresoDescuento.MontoPorHorasAusentes = 20;
+            boleta.ConceptoDeIngresoDescuento.MontoDeOtrosDescuentos = 5;
+            boleta.ConceptoDeIngresoDescuento.MontoPorAdelantos = 50;
             boleta.Contrato.Afp.PorcentajeAfp = 10;
             Double totalDescuento = boleta.CalcularTotalDescuento();
-            Double totalDescuentoEsperado = 53;
+            Double totalDescuentoEsperado = 267;
             Assert.AreEqual(totalDescuento, totalDescuentoEsperado);
         }
         [TestMethod]
@@ -76,14 +78,14 @@ namespace ProyectoNominaSoftTest
             Contrato contrato = new Contrato();
             ConceptoDeIngresoDescuento concepto = new ConceptoDeIngresoDescuento();
             BoletaDePago boleta = new BoletaDePago(contrato, concepto);
-            boleta.Contrato.PagoPorHora = 10;
-            boleta.TotalDeHoras = 48;
-            boleta.AsignacionFamiliar = 85;
-            boleta.ConceptoDeIngresoDescuento.MontoDeOtrosIngresos = 10;
-            boleta.ConceptoDeIngresoDescuento.MontoPorHorasExtras = 10;
+            boleta.Contrato.PagoPorHora = 12;
+            boleta.TotalDeHoras = 160;
+            boleta.Contrato.AsignacionFamiliar = true;
+            boleta.ConceptoDeIngresoDescuento.MontoDeOtrosIngresos = 30;
+            boleta.ConceptoDeIngresoDescuento.MontoPorHorasExtras = 20;
             boleta.ConceptoDeIngresoDescuento.MontoPorReintegros = 10;
             Double totalIngreso = boleta.CalcularTotalDeIngresos();
-            Double totalIngresoEsperado = 595;
+            Double totalIngresoEsperado = 2073;
             Assert.AreEqual(totalIngreso, totalIngresoEsperado);
         }
     }

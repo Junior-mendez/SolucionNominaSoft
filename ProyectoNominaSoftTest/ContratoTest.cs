@@ -13,27 +13,25 @@ namespace ProyectoNominaSoftTest
         public void ValidarValorPorHoraTest()
         {
             Contrato contrato = new Contrato();
-            contrato.PagoPorHora = 11;
+            contrato.PagoPorHora = 12;
             Boolean validezPago = contrato.ValidarValorPorHora();
             Boolean validezPago_esperado = true;
             Assert.AreEqual(validezPago, validezPago_esperado);
         }
         [TestMethod]
-        public void CalcularDescuentosAfpTest()
+        public void CalcularAsignacionFamiliarTest()
         {
-            Afp afp = new Afp();
-            Contrato contrato = new Contrato(afp);
-            Double sueldoBasico = 850;
-            contrato.Afp.PorcentajeAfp = 13;
-            Double descuentoAfp = contrato.CalcularDescuentosAfp(sueldoBasico);
-            Double descuentoAfp_esperado = 110.5;
-            Assert.AreEqual(descuentoAfp, descuentoAfp_esperado);
+            Contrato contrato = new Contrato();
+            contrato.AsignacionFamiliar = true;
+            Double asignacionFam = contrato.CalcularAsignacionFamiliar();
+            Double asignacionFamiliar_esperado = 93;
+            Assert.AreEqual(asignacionFam, asignacionFamiliar_esperado);
         }
         [TestMethod]
         public void ValidarHorasSemanalesTest()
         {
             Contrato contrato = new Contrato();
-            contrato.HorasSemana = 12;
+            contrato.HorasSemana = 40;
             Boolean validezHoraSemanal = contrato.ValidarHorasSemanales();
             Boolean validezHoraSemanal_esperado = true;
             Assert.AreEqual(validezHoraSemanal, validezHoraSemanal_esperado);
@@ -43,7 +41,7 @@ namespace ProyectoNominaSoftTest
         {
             Contrato contrato = new Contrato();
             //contrato.FechaFin = Convert.ToDateTime("23/05/2021");
-            contrato.FechaFin = new  DateTime(2021,05,14);
+            contrato.FechaFin = new  DateTime(2021,07,31);
             contrato.Estado = true;
             Boolean validezVigencia = contrato.ValidarVigenciaDeContrato();
             Boolean validezVigencia_esperado = true;
@@ -54,8 +52,8 @@ namespace ProyectoNominaSoftTest
         {
             Contrato anterior = new Contrato();
             Contrato contrato = new Contrato();
-            contrato.FechaInicio= new DateTime(2021, 05, 14);
-            anterior.FechaFin= new DateTime(2021, 05, 13);
+            contrato.FechaInicio= new DateTime(2021, 05, 01);
+            anterior.FechaFin= new DateTime(2021, 03, 31);
             Boolean verificaContratoAnterior = contrato.VerificarContratoAnterior(anterior);
             Boolean verificaContratoAnterior_esperdo = true;
             Assert.AreEqual(verificaContratoAnterior, verificaContratoAnterior_esperdo);
@@ -64,8 +62,8 @@ namespace ProyectoNominaSoftTest
         public void VerfificarFechaFinTest()
         {
             Contrato contrato = new Contrato();
-            contrato.FechaFin= new DateTime(2021, 12, 14);
-            contrato.FechaInicio = new DateTime(2021, 05, 14);
+            contrato.FechaFin= new DateTime(2021, 08, 01);
+            contrato.FechaInicio = new DateTime(2021, 05, 01);
             Boolean verificaFechaFin = contrato.VerfificarFechaFin();
             Boolean verificaFechaFin_esperado = true;
             Assert.AreEqual(verificaFechaFin, verificaFechaFin_esperado);

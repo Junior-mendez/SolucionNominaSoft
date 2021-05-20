@@ -14,7 +14,7 @@ namespace CapaDominio.Entidades
         private DateTime fechaInicio;
         private DateTime fechaFin;
         private int horasSemana;
-        private int pagoPorHora;
+        private double pagoPorHora;
         private Boolean estado;
         private Empleado empleado;
         private Afp afp;
@@ -32,7 +32,7 @@ namespace CapaDominio.Entidades
         public DateTime FechaInicio { get => fechaInicio; set => fechaInicio = value; }
         public DateTime FechaFin { get => fechaFin; set => fechaFin = value; }
         public int HorasSemana { get => horasSemana; set => horasSemana = value; }
-        public int PagoPorHora { get => pagoPorHora; set => pagoPorHora = value; }
+        public double PagoPorHora { get => pagoPorHora; set => pagoPorHora = value; }
         
         public Empleado Empleado { get => empleado; set => empleado = value; }
         public Afp Afp { get => afp; set => afp = value; }
@@ -52,14 +52,16 @@ namespace CapaDominio.Entidades
             return false;
         }
 
-        public Double CalcularDescuentosAfp(Double sueldoBasico)
+        public double CalcularAsignacionFamiliar()//r8
         {
-            Double descuentoAFp;
-            descuentoAFp = sueldoBasico * (Afp.PorcentajeAfp/100);
-            return descuentoAFp;
+            if (AsignacionFamiliar == true)
+            {
+                return 930 * 0.1;
+            }
+            return 0;
         }
 
-        
+
 
         public Boolean ValidarHorasSemanales()
         {

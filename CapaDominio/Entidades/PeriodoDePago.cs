@@ -23,11 +23,11 @@ namespace CapaDominio.Entidades
             if ( DateTime.Now >= FechaFin)
             {
                 //throw new Exception("No se encuentra dentro del periodo de pago");
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
 
             }
         }
