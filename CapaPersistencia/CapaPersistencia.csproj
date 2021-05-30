@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO_SQLServer\AfpDAO.cs" />
+    <Compile Include="ADO_SQLServer\BoletaDePagoDAO.cs" />
+    <Compile Include="ADO_SQLServer\ConceptoDeIngresoDescuentoDAO.cs" />
+    <Compile Include="ADO_SQLServer\ContratoDAO.cs" />
+    <Compile Include="ADO_SQLServer\EmpleadoDAO.cs" />
+    <Compile Include="ADO_SQLServer\GestorSQL.cs" />
+    <Compile Include="ADO_SQLServer\PeriodoDePagoDAO.cs" />
+    <Compile Include="FabricaDatos\FabricaAbstracta.cs" />
+    <Compile Include="FabricaDatos\FabricaSQLServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,8 +58,6 @@
       <Name>CapaDominio</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ADO_SQLServer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

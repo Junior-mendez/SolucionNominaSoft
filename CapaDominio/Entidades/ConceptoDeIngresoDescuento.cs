@@ -8,6 +8,7 @@ namespace CapaDominio.Entidades
 {
     public class ConceptoDeIngresoDescuento
     {
+        private int codigoConcepto;//codigo
         private double montoDeOtrosDescuentos;
         private double montoDeOtrosIngresos;
         private double montoPorAdelantos;
@@ -17,14 +18,16 @@ namespace CapaDominio.Entidades
         private PeriodoDePago periodoDePago;
         private Contrato contrato;
 
+        public int CodigoConcepto { get => codigoConcepto; set => codigoConcepto = value; }
         public double MontoDeOtrosDescuentos { get => montoDeOtrosDescuentos; set => montoDeOtrosDescuentos = value; }
         public double MontoDeOtrosIngresos { get => montoDeOtrosIngresos; set => montoDeOtrosIngresos = value; }
         public double MontoPorAdelantos { get => montoPorAdelantos; set => montoPorAdelantos = value; }
         public double MontoPorHorasAusentes { get => montoPorHorasAusentes; set => montoPorHorasAusentes = value; }
         public double MontoPorHorasExtras { get => montoPorHorasExtras; set => montoPorHorasExtras = value; }
         public double MontoPorReintegros { get => montoPorReintegros; set => montoPorReintegros = value; }
-        internal PeriodoDePago PeriodoDePago { get => periodoDePago; set => periodoDePago = value; }
-        internal Contrato Contrato { get => contrato; set => contrato = value; }
+        public PeriodoDePago PeriodoDePago { get => periodoDePago; set => periodoDePago = value; }
+        public Contrato Contrato { get => contrato; set => contrato = value; }
+
 
         //reglas
 

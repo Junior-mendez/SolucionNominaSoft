@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.WindowsForms
 {
-    public partial class Form1 : Form
+    public partial class FormMenu : Form
     {
-        public Form1()
+        public FormMenu()
         {
             InitializeComponent();
+        }
+
+        private void registrarContratoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRegistrarContrato formRegistrarContrato = new FormRegistrarContrato();
+            formRegistrarContrato.Show();
         }
     }
 }

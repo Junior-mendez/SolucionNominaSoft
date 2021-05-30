@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servicios\ProcesarContraroServicio.cs" />
+    <Compile Include="Servicios\ProcesarContratoServicio.cs" />
     <Compile Include="Servicios\ProcesarPagoServicio.cs" />
   </ItemGroup>
   <ItemGroup>

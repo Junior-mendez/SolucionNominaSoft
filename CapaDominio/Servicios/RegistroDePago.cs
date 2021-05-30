@@ -25,7 +25,7 @@ namespace CapaDominio.Servicios
                 }
             }
         }
-        private BoletaDePago registrarPago(Contrato contrato, PeriodoDePago periodo)
+        public BoletaDePago registrarPago(Contrato contrato, PeriodoDePago periodo)
         {
             BoletaDePago boleta = new BoletaDePago(contrato,periodo);
             boleta.TotalDeHoras= boleta.CalcularTotalDeHoras();//r13

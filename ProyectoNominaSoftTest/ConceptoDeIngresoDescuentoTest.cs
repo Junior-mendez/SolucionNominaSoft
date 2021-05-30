@@ -6,9 +6,7 @@ using CapaDominio.Entidades;
 
 namespace ProyectoNominaSoftTest
 {
-    /// <summary>
-    /// Descripción resumida de ConceptoDeIngresoDescuentoTest
-    /// </summary>
+
     [TestClass]
     public class ConceptoDeIngresoDescuentoTest
     {

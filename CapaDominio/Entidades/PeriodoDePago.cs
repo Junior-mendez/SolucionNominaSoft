@@ -8,15 +8,17 @@ namespace CapaDominio.Entidades
 {
     public class PeriodoDePago
     {
-        private Boolean Estado;
+        private int codigoPeriodo;//codigo
+        private Boolean estado;
         private DateTime fechaInicio;
         private DateTime fechaFin;
-        //private float semanasDelPeriodo;
+        private float semanasDelPeriodo;
 
-        public bool Estado1 { get => Estado; set => Estado = value; }
+        public bool Estado { get => estado; set => estado = value; }
         public DateTime FechaInicio { get => fechaInicio; set => fechaInicio = value; }
         public DateTime FechaFin { get => fechaFin; set => fechaFin = value; }
-        //public float SemanasDelPeriodo { get => semanasDelPeriodo; set => semanasDelPeriodo = value; }
+        public float SemanasDelPeriodo { get => semanasDelPeriodo; set => semanasDelPeriodo = value; }
+        public int CodigoPeriodo { get => codigoPeriodo; set => codigoPeriodo = value; }
 
         public Boolean VerificarPeriodoDePago()
         {

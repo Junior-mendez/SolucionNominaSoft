@@ -15,5 +15,11 @@ namespace CapaDominio.Entidades
         public int CodigoAfp { get => codigoAfp; set => codigoAfp = value; }
         public string NombreAfp { get => nombreAfp; set => nombreAfp = value; }
         public float PorcentajeAfp { get => porcentajeAfp; set => porcentajeAfp = value; }
+
+        public Afp()
+        {
+
+        }
     }
+
 }
