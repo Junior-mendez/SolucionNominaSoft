@@ -1,5 +1,6 @@
 ﻿using CapaDominio.Contratos;
 using CapaDominio.Entidades;
+using CapaDominio.Libreria;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -18,7 +19,7 @@ namespace CapaPersistencia.ADO_SQLServer
         public ConceptoDeIngresoDescuentoDAO(IGestorAccesoADatos gestorSQL, IPeriodo periodoDePagoDAO, IContrato contratoDAO)// debe ser del tipo interfaz para hacerlo de tipo generico
         {
             this.gestorSQL = (GestorSQL)gestorSQL; // (GestorSQL) el objeto de tipo interfaz se hace un moldeo al tipo original
-            this.contratoDAO = (ContratoDAO)gestorSQL;
+            this.contratoDAO = (ContratoDAO)contratoDAO;
             this.periodoDePagoDAO = (PeriodoDePagoDAO)periodoDePagoDAO;
         }
         /*
@@ -43,35 +44,31 @@ namespace CapaPersistencia.ADO_SQLServer
             return listaDeConceptosIngresoDescuento;
         }*/
 
-        private ConceptoDeIngresoDescuento obtenerConceptos(SqlDataReader resultadoSQL)
+        private ConceptoDeIngresoDescuento obtenerConceptos(SqlDataReader resultadoSQL,PeriodoDePago periodo)
         {
-            ConceptoDeIngresoDescuento conceptoDeIngresosDescuentos = new ConceptoDeIngresoDescuento();
+            ConceptoDeIngresoDescuento conceptoDeIngresosDescuentos = new ConceptoDeIngresoDescuento(periodo);
 
-            conceptoDeIngresosDescuentos.MontoDeOtrosDescuentos = float.Parse(resultadoSQL.GetString(0));
-            conceptoDeIngresosDescuentos.MontoDeOtrosIngresos = float.Parse(resultadoSQL.GetString(1));
-            conceptoDeIngresosDescuentos.MontoPorAdelantos = float.Parse(resultadoSQL.GetString(2));
-            conceptoDeIngresosDescuentos.MontoPorHorasAusentes = float.Parse(resultadoSQL.GetString(3));
-            conceptoDeIngresosDescuentos.MontoPorHorasExtras = float.Parse(resultadoSQL.GetString(4));
-            conceptoDeIngresosDescuentos.MontoPorReintegros = float.Parse(resultadoSQL.GetString(5));
-            conceptoDeIngresosDescuentos.CodigoConcepto = int.Parse(resultadoSQL.GetString(6));
-            conceptoDeIngresosDescuentos.PeriodoDePago = periodoDePagoDAO.buscarPeriodo(int.Parse(resultadoSQL.GetString(7)));
-            conceptoDeIngresosDescuentos.Contrato = contratoDAO.buscarContrato(int.Parse(resultadoSQL.GetString(8)));
-
-
+            conceptoDeIngresosDescuentos.MontoDeOtrosDescuentos = resultadoSQL.GetColumnValue<Double>("montoDeOtrosDescuentos");
+            conceptoDeIngresosDescuentos.MontoDeOtrosIngresos = resultadoSQL.GetColumnValue<Double>("montoDeOtrosIngresos");
+            conceptoDeIngresosDescuentos.MontoPorAdelantos = resultadoSQL.GetColumnValue<Double>("montoPorAdelantos");
+            conceptoDeIngresosDescuentos.MontoPorHorasAusentes = resultadoSQL.GetColumnValue<Double>("montoPorHorasAusentes");
+            conceptoDeIngresosDescuentos.MontoPorHorasExtras = resultadoSQL.GetColumnValue<Double>("montoPorHorasExtra");
+            conceptoDeIngresosDescuentos.MontoPorReintegros = resultadoSQL.GetColumnValue<Double>("montoPorReintegros");
+            conceptoDeIngresosDescuentos.CodigoConcepto = resultadoSQL.GetColumnValue<int>("codigoConcepto");
+            periodo.CodigoPeriodo = resultadoSQL.GetColumnValue<int>("codigoPeriodo");
             return conceptoDeIngresosDescuentos;
-
         }
 
         public ConceptoDeIngresoDescuento buscarConcepto(Contrato contrato, PeriodoDePago periodoDePago)
         {
-            ConceptoDeIngresoDescuento concepto = new ConceptoDeIngresoDescuento();
-            String consultaSQL = "select montoDeOtrosDescuentos,montoDeOtrosIngresos,montoPorAdelantos,montoPorHorasAusentes,montoPorHorasExtras, montoPorReintegros, codigoConcepto, codigoPeriodo, codigoContrato from conceptodeingresosdescuentos  where conceptodeingresosdescuentos.codigoContrato = '" + contrato.Codigo + "' AND conceptodeingresosdescuentos.codigoPeriodo = '" + periodoDePago.CodigoPeriodo + "';";
+            ConceptoDeIngresoDescuento concepto = new ConceptoDeIngresoDescuento(periodoDePago);
+            String consultaSQL = "select montoDeOtrosDescuentos,montoDeOtrosIngresos,montoPorAdelantos,montoPorHorasAusentes,montoPorHorasExtra, montoPorReintegros, codigoConcepto, codigoPeriodo,codigoContrato from ConceptoDeIngresoYDescuento  where codigoContrato = '" + contrato.Codigo + "' AND codigoPeriodo = '" + periodoDePago.CodigoPeriodo + "';";
             try
             {
                 SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
                 if (resultadoSQL.Read())
                 {
-                    concepto = obtenerConceptos(resultadoSQL);
+                    concepto = obtenerConceptos(resultadoSQL,periodoDePago);
                 }
                 else
                 {

@@ -29,9 +29,10 @@ namespace CapaDominio.Servicios
         {
             BoletaDePago boleta = new BoletaDePago(contrato,periodo);
             boleta.TotalDeHoras= boleta.CalcularTotalDeHoras();//r13
-            //boleta.SueldoBasico = boleta.CalcularSueldoBasico();//r7
+            boleta.SueldoBasico = boleta.CalcularSueldoBasico();//r7
             boleta.AsignacionFamiliar = boleta.Contrato.CalcularAsignacionFamiliar();//r8
-            boleta.TotalDeDescuentos = boleta.CalcularTotalDescuento();//r11
+            boleta.TotalDeDescuentos = boleta.CalcularTotalDescuento(boleta);//r11
+            boleta.DescuentoAfp = boleta.CalcularDescuentosAfp(boleta.SueldoBasico,contrato.Afp.PorcentajeAfp);
             boleta.TotalDeIngresos = boleta.CalcularTotalDeIngresos();//r9
             //boleta.SueldoNeto = boleta.CalcularSueldoNeto();//r12
 

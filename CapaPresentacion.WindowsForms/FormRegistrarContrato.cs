@@ -111,6 +111,13 @@ namespace CapaPresentacion.WindowsForms
             textCuentaAfp.Text = "";
             textHoraSemana.Text = "";
             textValorHora.Text = "";
+            checkAsignacion.Checked = false;
+            groupBoxContrato.Enabled = false;
+        }
+
+        private void textValorHora_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

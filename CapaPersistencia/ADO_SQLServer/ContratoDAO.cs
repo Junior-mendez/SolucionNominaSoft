@@ -58,7 +58,7 @@ namespace CapaPersistencia.ADO_SQLServer
             List<Contrato> listaDeContratos = new List<Contrato>();
             Contrato contrato;
             string consultaSQL;
-            consultaSQL = "select codigoContrato, cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar, codigoafp, codigoEmpleado from Contrato where estado like '%" + estado + "%' order by cargo";
+            consultaSQL = "select codigoContrato, cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar, codigoafp, dniEmpleado from Contrato where estado like '%" + estado + "%' order by cargo";
             try
             {
                 SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);

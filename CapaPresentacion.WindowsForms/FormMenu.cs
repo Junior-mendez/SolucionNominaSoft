@@ -22,5 +22,17 @@ namespace CapaPresentacion.WindowsForms
             FormRegistrarContrato formRegistrarContrato = new FormRegistrarContrato();
             formRegistrarContrato.Show();
         }
+
+        private void registrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRegistroEmpleado formEmpleado = new FormRegistroEmpleado();
+            formEmpleado.Show();
+        }
+
+        private void procesarPagosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProcesarPago formProcesar =new FormProcesarPago();
+            formProcesar.Show();
+        }
     }
 }

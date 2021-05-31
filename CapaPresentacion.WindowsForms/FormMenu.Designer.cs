@@ -37,6 +37,9 @@
             this.pagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesarPagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarPeriodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,7 +57,8 @@
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.contratosToolStripMenuItem,
-            this.pagosToolStripMenuItem});
+            this.pagosToolStripMenuItem,
+            this.empleadoToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
@@ -73,7 +77,7 @@
             // registrarContratoToolStripMenuItem
             // 
             this.registrarContratoToolStripMenuItem.Name = "registrarContratoToolStripMenuItem";
-            this.registrarContratoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarContratoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.registrarContratoToolStripMenuItem.Text = "Registrar Contrato";
             this.registrarContratoToolStripMenuItem.Click += new System.EventHandler(this.registrarContratoToolStripMenuItem_Click);
             // 
@@ -95,14 +99,37 @@
             // procesarPagosToolStripMenuItem
             // 
             this.procesarPagosToolStripMenuItem.Name = "procesarPagosToolStripMenuItem";
-            this.procesarPagosToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.procesarPagosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.procesarPagosToolStripMenuItem.Text = "Procesar Pagos";
+            this.procesarPagosToolStripMenuItem.Click += new System.EventHandler(this.procesarPagosToolStripMenuItem_Click);
             // 
             // listarPeriodosToolStripMenuItem
             // 
             this.listarPeriodosToolStripMenuItem.Name = "listarPeriodosToolStripMenuItem";
-            this.listarPeriodosToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.listarPeriodosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listarPeriodosToolStripMenuItem.Text = "Listar Periodos";
+            // 
+            // empleadoToolStripMenuItem
+            // 
+            this.empleadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarEmpleadoToolStripMenuItem,
+            this.listarEmpleadosToolStripMenuItem});
+            this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.empleadoToolStripMenuItem.Text = "Empleado";
+            // 
+            // registrarEmpleadoToolStripMenuItem
+            // 
+            this.registrarEmpleadoToolStripMenuItem.Name = "registrarEmpleadoToolStripMenuItem";
+            this.registrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarEmpleadoToolStripMenuItem.Text = "Registrar Empleado";
+            this.registrarEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.registrarEmpleadoToolStripMenuItem_Click);
+            // 
+            // listarEmpleadosToolStripMenuItem
+            // 
+            this.listarEmpleadosToolStripMenuItem.Name = "listarEmpleadosToolStripMenuItem";
+            this.listarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listarEmpleadosToolStripMenuItem.Text = "Listar Empleados";
             // 
             // pictureBox1
             // 
@@ -143,5 +170,8 @@
         private System.Windows.Forms.ToolStripMenuItem procesarPagosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarPeriodosToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarEmpleadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarEmpleadosToolStripMenuItem;
     }
 }

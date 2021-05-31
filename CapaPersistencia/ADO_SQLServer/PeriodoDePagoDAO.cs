@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CapaDominio.Entidades;
 using CapaDominio.Contratos;
+using CapaDominio.Libreria;
 
 namespace CapaPersistencia.ADO_SQLServer
 {
@@ -40,12 +41,12 @@ namespace CapaPersistencia.ADO_SQLServer
         }
         private PeriodoDePago obtenerPeriodo(SqlDataReader resultadoSQL)
         {
-            PeriodoDePago periodoDePago = new PeriodoDePago();
-            periodoDePago.CodigoPeriodo = int.Parse(resultadoSQL.GetString(0));
-            periodoDePago.Estado = resultadoSQL.GetBoolean(1);
-            periodoDePago.FechaFin = resultadoSQL.GetDateTime(2);
-            periodoDePago.FechaInicio = resultadoSQL.GetDateTime(3);
-            periodoDePago.SemanasDelPeriodo = resultadoSQL.GetInt32(3);
+            PeriodoDePago periodoDePago = new PeriodoDePago {
+                CodigoPeriodo = resultadoSQL.GetColumnValue<int>("codigoPeriodo"),
+                Estado = resultadoSQL.GetColumnValue<Boolean>("estado"),
+                FechaFin = resultadoSQL.GetColumnValue<DateTime>("fechaFin"),
+                FechaInicio = resultadoSQL.GetColumnValue<DateTime>("fechaInicio")
+            };
             return periodoDePago;
         }
 
@@ -65,6 +66,29 @@ namespace CapaPersistencia.ADO_SQLServer
                 else
                 {
                     throw new Exception("No existe el Periodo");
+                }
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+            return periodoDePago;
+        }
+        public PeriodoDePago buscarPeriodoActivo(Boolean estado)
+        {
+            PeriodoDePago periodoDePago;
+
+            String consultaSQL = "select codigoPeriodo,estado,fechaFin,fechaInicio from PeriodoPago where estado='" + estado + "';";//preguntar semanas del periodo
+            try
+            {
+                SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
+                if (resultadoSQL.Read())
+                {
+                    periodoDePago = obtenerPeriodo(resultadoSQL);
+                }
+                else
+                {
+                    throw new Exception("No existe Periodo Activo");
                 }
             }
             catch (Exception err)

@@ -30,6 +30,14 @@ namespace CapaDominio.Entidades
 
 
         //reglas
+        public ConceptoDeIngresoDescuento()
+        {
+
+        }
+        public ConceptoDeIngresoDescuento(PeriodoDePago periodo)
+        {
+            this.PeriodoDePago = periodo;
+        }
 
         public double CalcularConceptoIngreso()
         {

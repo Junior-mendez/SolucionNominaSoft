@@ -15,7 +15,7 @@ namespace ProyectoNominaSoftTest
             BoletaDePago boleta = new BoletaDePago(contrato);
             Double sueldoBasico = 930;
             contrato.Afp.PorcentajeAfp = 10;
-            Double descuentoAfp = boleta.CalcularDescuentosAfp(sueldoBasico);
+            Double descuentoAfp = boleta.CalcularDescuentosAfp(sueldoBasico, contrato.Afp.PorcentajeAfp);
             Double descuentoAfp_esperado = 93;
             Assert.AreEqual(descuentoAfp, descuentoAfp_esperado);
         }

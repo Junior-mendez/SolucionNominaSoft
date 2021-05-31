@@ -15,6 +15,7 @@ namespace CapaDominio.Entidades
         private double totalDeDescuentos;
         private double totalDeHoras;
         private double totalDeIngresos;
+        private double descuentoAfp;
         private Contrato contrato;
         private PeriodoDePago periodoDePago;
         private ConceptoDeIngresoDescuento conceptoDeIngresoDescuento;
@@ -44,6 +45,7 @@ namespace CapaDominio.Entidades
         public double SueldoNeto { get => sueldoNeto; set => sueldoNeto = value; }
         public double TotalDeDescuentos { get => totalDeDescuentos; set => totalDeDescuentos = value; }
         public double TotalDeHoras { get => totalDeHoras; set => totalDeHoras = value; }
+        public double DescuentoAfp { get => descuentoAfp; set => descuentoAfp = value; }
         public double TotalDeIngresos { get => totalDeIngresos; set => totalDeIngresos = value; }
         public Contrato Contrato { get => contrato; set => contrato = value; }
         public PeriodoDePago PeriodoDePago { get => periodoDePago; set => periodoDePago = value; }
@@ -55,10 +57,10 @@ namespace CapaDominio.Entidades
 
       
 
-        public Double CalcularDescuentosAfp(Double sueldoBasico)
+        public Double CalcularDescuentosAfp(Double sueldoBasico,float porcentajeAfp)
         {
             Double descuentoAFp;
-            descuentoAFp = sueldoBasico * (Contrato.Afp.PorcentajeAfp / 100);
+            descuentoAFp = sueldoBasico * (porcentajeAfp / 100);
             return descuentoAFp;
         }
         public double CalcularSueldoBasico()//r7
@@ -73,9 +75,9 @@ namespace CapaDominio.Entidades
         }
 
 
-        public double CalcularTotalDescuento()//r11
+        public double CalcularTotalDescuento(BoletaDePago boleta)//r11
         {
-            return CalcularDescuentosAfp (CalcularSueldoBasico())/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
+            return boleta.descuentoAfp/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
         }
 
 

@@ -29,15 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dateFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.textGrado = new System.Windows.Forms.TextBox();
+            this.textEstadoCivil = new System.Windows.Forms.TextBox();
+            this.textTelefono = new System.Windows.Forms.TextBox();
+            this.textDireccion = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
             this.textDni = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBoxContrato = new System.Windows.Forms.GroupBox();
+            this.checkAsignacion = new System.Windows.Forms.CheckBox();
+            this.textHoraSemana = new System.Windows.Forms.TextBox();
+            this.textCuentaAfp = new System.Windows.Forms.TextBox();
+            this.dateFechaFin = new System.Windows.Forms.DateTimePicker();
             this.dateFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.textCargo = new System.Windows.Forms.TextBox();
             this.textValorHora = new System.Windows.Forms.TextBox();
@@ -47,19 +58,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.dateFechaFin = new System.Windows.Forms.DateTimePicker();
-            this.textCuentaAfp = new System.Windows.Forms.TextBox();
-            this.textHoraSemana = new System.Windows.Forms.TextBox();
-            this.checkAsignacion = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textEstadoCivil = new System.Windows.Forms.TextBox();
-            this.dateFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-            this.textGrado = new System.Windows.Forms.TextBox();
-            this.textTelefono = new System.Windows.Forms.TextBox();
-            this.textDireccion = new System.Windows.Forms.TextBox();
-            this.textNombre = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBoxContrato.SuspendLayout();
             this.SuspendLayout();
@@ -88,59 +88,70 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
             // 
-            // label1
+            // button3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DNI:";
+            this.button3.Location = new System.Drawing.Point(213, 30);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(62, 21);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Validar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label2
+            // dateFechaNacimiento
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre:";
+            this.dateFechaNacimiento.Enabled = false;
+            this.dateFechaNacimiento.Location = new System.Drawing.Point(382, 66);
+            this.dateFechaNacimiento.Name = "dateFechaNacimiento";
+            this.dateFechaNacimiento.Size = new System.Drawing.Size(209, 20);
+            this.dateFechaNacimiento.TabIndex = 14;
             // 
-            // label3
+            // textGrado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Dirección:";
+            this.textGrado.Enabled = false;
+            this.textGrado.Location = new System.Drawing.Point(382, 97);
+            this.textGrado.Name = "textGrado";
+            this.textGrado.Size = new System.Drawing.Size(89, 20);
+            this.textGrado.TabIndex = 13;
             // 
-            // label4
+            // textEstadoCivil
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(281, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Estado Civil:";
+            this.textEstadoCivil.Enabled = false;
+            this.textEstadoCivil.Location = new System.Drawing.Point(382, 32);
+            this.textEstadoCivil.Name = "textEstadoCivil";
+            this.textEstadoCivil.Size = new System.Drawing.Size(89, 20);
+            this.textEstadoCivil.TabIndex = 11;
             // 
-            // label5
+            // textTelefono
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Teléfono";
+            this.textTelefono.Enabled = false;
+            this.textTelefono.Location = new System.Drawing.Point(102, 112);
+            this.textTelefono.Name = "textTelefono";
+            this.textTelefono.Size = new System.Drawing.Size(100, 20);
+            this.textTelefono.TabIndex = 10;
             // 
-            // label6
+            // textDireccion
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(281, 66);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Fecha Nacimiento:";
+            this.textDireccion.Enabled = false;
+            this.textDireccion.Location = new System.Drawing.Point(102, 83);
+            this.textDireccion.Name = "textDireccion";
+            this.textDireccion.Size = new System.Drawing.Size(100, 20);
+            this.textDireccion.TabIndex = 9;
+            // 
+            // textNombre
+            // 
+            this.textNombre.Enabled = false;
+            this.textNombre.Location = new System.Drawing.Point(102, 57);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(100, 20);
+            this.textNombre.TabIndex = 8;
+            // 
+            // textDni
+            // 
+            this.textDni.Location = new System.Drawing.Point(102, 29);
+            this.textDni.Name = "textDni";
+            this.textDni.Size = new System.Drawing.Size(100, 20);
+            this.textDni.TabIndex = 7;
             // 
             // label7
             // 
@@ -151,12 +162,59 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Grado Académico:";
             // 
-            // textDni
+            // label6
             // 
-            this.textDni.Location = new System.Drawing.Point(102, 29);
-            this.textDni.Name = "textDni";
-            this.textDni.Size = new System.Drawing.Size(100, 20);
-            this.textDni.TabIndex = 7;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(281, 66);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Fecha Nacimiento:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Teléfono";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(281, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Estado Civil:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Dirección:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DNI:";
             // 
             // groupBoxContrato
             // 
@@ -182,6 +240,37 @@
             this.groupBoxContrato.Text = "Datos Contrato";
             this.groupBoxContrato.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // checkAsignacion
+            // 
+            this.checkAsignacion.AutoSize = true;
+            this.checkAsignacion.Location = new System.Drawing.Point(27, 118);
+            this.checkAsignacion.Name = "checkAsignacion";
+            this.checkAsignacion.Size = new System.Drawing.Size(110, 17);
+            this.checkAsignacion.TabIndex = 18;
+            this.checkAsignacion.Text = "Asigación Familiar";
+            this.checkAsignacion.UseVisualStyleBackColor = true;
+            // 
+            // textHoraSemana
+            // 
+            this.textHoraSemana.Location = new System.Drawing.Point(480, 63);
+            this.textHoraSemana.Name = "textHoraSemana";
+            this.textHoraSemana.Size = new System.Drawing.Size(89, 20);
+            this.textHoraSemana.TabIndex = 17;
+            // 
+            // textCuentaAfp
+            // 
+            this.textCuentaAfp.Location = new System.Drawing.Point(113, 83);
+            this.textCuentaAfp.Name = "textCuentaAfp";
+            this.textCuentaAfp.Size = new System.Drawing.Size(209, 20);
+            this.textCuentaAfp.TabIndex = 16;
+            // 
+            // dateFechaFin
+            // 
+            this.dateFechaFin.Location = new System.Drawing.Point(113, 53);
+            this.dateFechaFin.Name = "dateFechaFin";
+            this.dateFechaFin.Size = new System.Drawing.Size(209, 20);
+            this.dateFechaFin.TabIndex = 15;
+            // 
             // dateFechaInicio
             // 
             this.dateFechaInicio.Location = new System.Drawing.Point(113, 23);
@@ -202,6 +291,7 @@
             this.textValorHora.Name = "textValorHora";
             this.textValorHora.Size = new System.Drawing.Size(89, 20);
             this.textValorHora.TabIndex = 11;
+            this.textValorHora.TextChanged += new System.EventHandler(this.textValorHora_TextChanged);
             // 
             // label8
             // 
@@ -257,37 +347,6 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Fecha Inicio:";
             // 
-            // dateFechaFin
-            // 
-            this.dateFechaFin.Location = new System.Drawing.Point(113, 53);
-            this.dateFechaFin.Name = "dateFechaFin";
-            this.dateFechaFin.Size = new System.Drawing.Size(209, 20);
-            this.dateFechaFin.TabIndex = 15;
-            // 
-            // textCuentaAfp
-            // 
-            this.textCuentaAfp.Location = new System.Drawing.Point(113, 83);
-            this.textCuentaAfp.Name = "textCuentaAfp";
-            this.textCuentaAfp.Size = new System.Drawing.Size(209, 20);
-            this.textCuentaAfp.TabIndex = 16;
-            // 
-            // textHoraSemana
-            // 
-            this.textHoraSemana.Location = new System.Drawing.Point(480, 63);
-            this.textHoraSemana.Name = "textHoraSemana";
-            this.textHoraSemana.Size = new System.Drawing.Size(89, 20);
-            this.textHoraSemana.TabIndex = 17;
-            // 
-            // checkAsignacion
-            // 
-            this.checkAsignacion.AutoSize = true;
-            this.checkAsignacion.Location = new System.Drawing.Point(27, 118);
-            this.checkAsignacion.Name = "checkAsignacion";
-            this.checkAsignacion.Size = new System.Drawing.Size(110, 17);
-            this.checkAsignacion.TabIndex = 18;
-            this.checkAsignacion.Text = "Asigación Familiar";
-            this.checkAsignacion.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(286, 344);
@@ -306,64 +365,6 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(213, 30);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(62, 21);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Validar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textEstadoCivil
-            // 
-            this.textEstadoCivil.Enabled = false;
-            this.textEstadoCivil.Location = new System.Drawing.Point(382, 32);
-            this.textEstadoCivil.Name = "textEstadoCivil";
-            this.textEstadoCivil.Size = new System.Drawing.Size(89, 20);
-            this.textEstadoCivil.TabIndex = 11;
-            // 
-            // dateFechaNacimiento
-            // 
-            this.dateFechaNacimiento.Enabled = false;
-            this.dateFechaNacimiento.Location = new System.Drawing.Point(382, 66);
-            this.dateFechaNacimiento.Name = "dateFechaNacimiento";
-            this.dateFechaNacimiento.Size = new System.Drawing.Size(209, 20);
-            this.dateFechaNacimiento.TabIndex = 14;
-            // 
-            // textGrado
-            // 
-            this.textGrado.Enabled = false;
-            this.textGrado.Location = new System.Drawing.Point(382, 97);
-            this.textGrado.Name = "textGrado";
-            this.textGrado.Size = new System.Drawing.Size(89, 20);
-            this.textGrado.TabIndex = 13;
-            // 
-            // textTelefono
-            // 
-            this.textTelefono.Enabled = false;
-            this.textTelefono.Location = new System.Drawing.Point(102, 112);
-            this.textTelefono.Name = "textTelefono";
-            this.textTelefono.Size = new System.Drawing.Size(100, 20);
-            this.textTelefono.TabIndex = 10;
-            // 
-            // textDireccion
-            // 
-            this.textDireccion.Enabled = false;
-            this.textDireccion.Location = new System.Drawing.Point(102, 83);
-            this.textDireccion.Name = "textDireccion";
-            this.textDireccion.Size = new System.Drawing.Size(100, 20);
-            this.textDireccion.TabIndex = 9;
-            // 
-            // textNombre
-            // 
-            this.textNombre.Enabled = false;
-            this.textNombre.Location = new System.Drawing.Point(102, 57);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(100, 20);
-            this.textNombre.TabIndex = 8;
             // 
             // FormRegistrarContrato
             // 
