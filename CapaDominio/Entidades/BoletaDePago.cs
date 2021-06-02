@@ -9,7 +9,7 @@ namespace CapaDominio.Entidades
     public class BoletaDePago
     {
         private double asignacionFamiliar;
-        private String fechaDeEmision;
+        private DateTime fechaDeEmision;
         private double sueldoBasico;
         private double sueldoNeto;
         private double totalDeDescuentos;
@@ -38,9 +38,15 @@ namespace CapaDominio.Entidades
             this.contrato = contrato;
             this.ConceptoDeIngresoDescuento = conceptoDeIngresoDescuento;
         }
+        public BoletaDePago(Contrato contrato, PeriodoDePago periodoDePago, ConceptoDeIngresoDescuento conceptoDeIngresoDescuento)
+        {
+            this.contrato = contrato;
+            this.PeriodoDePago = periodoDePago;
+            this.ConceptoDeIngresoDescuento = conceptoDeIngresoDescuento;
+        }
 
         public double AsignacionFamiliar { get => asignacionFamiliar; set => asignacionFamiliar = value; }
-        public string FechaDeEmision { get => fechaDeEmision; set => fechaDeEmision = value; }
+        public DateTime FechaDeEmision { get => fechaDeEmision; set => fechaDeEmision = value; }
         public double SueldoBasico { get => sueldoBasico; set => sueldoBasico = value; }
         public double SueldoNeto { get => sueldoNeto; set => sueldoNeto = value; }
         public double TotalDeDescuentos { get => totalDeDescuentos; set => totalDeDescuentos = value; }
@@ -75,9 +81,9 @@ namespace CapaDominio.Entidades
         }
 
 
-        public double CalcularTotalDescuento(BoletaDePago boleta)//r11
+        public double CalcularTotalDescuento(BoletaDePago boleta, ConceptoDeIngresoDescuento concepto)//r11
         {
-            return boleta.descuentoAfp/*r10*/ + ConceptoDeIngresoDescuento.CalcularConceptoDescuento();//r15
+            return boleta.descuentoAfp/*r10*/ + concepto.CalcularConceptoDescuento();//r15
         }
 
 
@@ -86,9 +92,9 @@ namespace CapaDominio.Entidades
             return PeriodoDePago.CalcularSemanasPeriodo() * contrato.HorasSemana;
         }
 
-        public double CalcularTotalDeIngresos()//r9
+        public double CalcularTotalDeIngresos(ConceptoDeIngresoDescuento concepto,Contrato contrato)//r9
         {
-            return CalcularSueldoBasico() + contrato.CalcularAsignacionFamiliar() + ConceptoDeIngresoDescuento.CalcularConceptoIngreso();//r14
+            return sueldoBasico + contrato.CalcularAsignacionFamiliar() + concepto.CalcularConceptoIngreso();//r14
         }
         /*
         public override bool Equals(object obj)

@@ -20,7 +20,7 @@ namespace CapaPersistencia.ADO_SQLServer
             {
                 conexion = new SqlConnection();
                 //conexion.ConnectionString = "Data Source=(local);Initial Catalog=BaseNominaSoft;Integrated Security=true";
-                conexion.ConnectionString = "server =JUNIOR\\SQLEXPRESS; database =BaseNominaSoft; integrated security = true";
+                conexion.ConnectionString = "server =JUNIOR\\SQLEXPRESS; database =BaseNominaSoft; integrated security = true;Trusted_Connection=True;MultipleActiveResultSets=True";
                 conexion.Open();
 
             }

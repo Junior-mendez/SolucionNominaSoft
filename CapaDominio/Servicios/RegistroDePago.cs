@@ -10,7 +10,7 @@ namespace CapaDominio.Servicios
 {
     public class RegistroDePago
     {
-        public void RegistrarBoletas(PeriodoDePago periodo,List<Contrato> contratos)//r6 
+        public void RegistrarBoletas(PeriodoDePago periodo,List<Contrato> contratos,ConceptoDeIngresoDescuento concepto)//r6 
         {
             if(periodo.VerificarPeriodoDePago())
             {
@@ -19,21 +19,22 @@ namespace CapaDominio.Servicios
                 {
                     if(contrato.Estado == true && contrato.FechaFin>periodo.FechaInicio)
                     {
-                        Boletas.Add(registrarPago(contrato, periodo));
+                        Boletas.Add(registrarPago(contrato, periodo,concepto));
                         
                     }
                 }
             }
         }
-        public BoletaDePago registrarPago(Contrato contrato, PeriodoDePago periodo)
+        public BoletaDePago registrarPago(Contrato contrato, PeriodoDePago periodo,ConceptoDeIngresoDescuento concepto)
         {
             BoletaDePago boleta = new BoletaDePago(contrato,periodo);
             boleta.TotalDeHoras= boleta.CalcularTotalDeHoras();//r13
             boleta.SueldoBasico = boleta.CalcularSueldoBasico();//r7
             boleta.AsignacionFamiliar = boleta.Contrato.CalcularAsignacionFamiliar();//r8
-            boleta.TotalDeDescuentos = boleta.CalcularTotalDescuento(boleta);//r11
+            boleta.TotalDeDescuentos = boleta.CalcularTotalDescuento(boleta, concepto);//r11
             boleta.DescuentoAfp = boleta.CalcularDescuentosAfp(boleta.SueldoBasico,contrato.Afp.PorcentajeAfp);
-            boleta.TotalDeIngresos = boleta.CalcularTotalDeIngresos();//r9
+            boleta.TotalDeIngresos = boleta.CalcularTotalDeIngresos( concepto,  contrato);//r9
+            boleta.FechaDeEmision = DateTime.Now;
             //boleta.SueldoNeto = boleta.CalcularSueldoNeto();//r12
 
             return boleta;

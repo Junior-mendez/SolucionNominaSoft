@@ -21,13 +21,15 @@ namespace CapaPersistencia.ADO_SQLServer
 
         public void actualizarPeriodo(PeriodoDePago periodoDePago)
         {
-            String consultaSQL = "update PeriodoDePago set estado = 'false' where PeriodoPago.codigoPeriodo = '" + periodoDePago.CodigoPeriodo + "';";
+            SqlCommand comando;
+            String consultaSQL = "update PeriodoPago set estado = 'false' where codigoPeriodo = '" + periodoDePago.CodigoPeriodo + "';";
             try
             {
-                SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
-                if (resultadoSQL.Read())
+                comando = gestorSQL.obtenerComandoSQL(consultaSQL);
+                int cant;
+                cant = comando.ExecuteNonQuery();
+                if (cant==1)
                 {
-                    periodoDePago = obtenerPeriodo(resultadoSQL);
                 }
                 else
                 {
@@ -93,7 +95,7 @@ namespace CapaPersistencia.ADO_SQLServer
             }
             catch (Exception err)
             {
-                throw err;
+                throw new Exception("No existe Periodo Activo");
             }
             return periodoDePago;
         }

@@ -19,7 +19,9 @@ namespace CapaPresentacion.WindowsForms
         public FormProcesarPago()
         {
             InitializeComponent();
-            obtenerPeriodo();
+            
+                obtenerPeriodo();
+           
             
         }
 
@@ -29,10 +31,17 @@ namespace CapaPresentacion.WindowsForms
         }
         public void obtenerPeriodo() 
         {
+         try
+            {
             periodo = procesarPago.buscarPeriodoActivo(true);
             textCodigo.Text = periodo.CodigoPeriodo.ToString();
             dateFechaInicio.Value = periodo.FechaInicio;
             dateFechaFin.Value = periodo.FechaFin;
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("No existe preiodo Activo");
+            }
         }
         public void procesarPeriodo()
         {
@@ -40,8 +49,11 @@ namespace CapaPresentacion.WindowsForms
             obtenerPeriodo();
             if (periodo != null)
             {
-
-                boletas = procesarPago.generarBoletas(periodo);
+               
+                    boletas = procesarPago.generarBoletas(periodo);
+                    MessageBox.Show("Se proceso");
+             
+               
                 //FormPlanillaPagos formPlanillaPagos = new FormPlanillaPagos(boletas);
             }
             else

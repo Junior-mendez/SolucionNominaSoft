@@ -35,22 +35,20 @@ namespace CapaPersistencia.ADO_SQLServer
 
         public void guardarBoleta(BoletaDePago boleta)
         {
-            string crearBoleta = "insert to BoletaDePago(asignacionFamiliar,fechaDeEmision, sueldoNeto, totalDeHoras,totalDeDescuentos,totalDeIngresos,codigoContrato,idConceptoDeIngresoDescuento,idPeriodoDePago)" +//preguntar ides y codigo de contrato
-                "values(@asignacionFamiliar,@fechaDeEmision,@sueldoNeto,@totalDeHoras,@totalDeDescuentos,@totalDeIngresos,@codigoContrato,@idConceptoDeIngresoDescuento,@idPeriodoDePago)";
+            string sqlProcedure = "sp_guardar_boletapago";
             try
             {
-                SqlCommand comando;
-
-                comando = gestorSQL.obtenerComandoSQL(crearBoleta);
+                SqlCommand comando = gestorSQL.obtenerComandoDeProcedimiento(sqlProcedure);
                 comando.Parameters.AddWithValue("@asignacionFamiliar", boleta.AsignacionFamiliar);
                 comando.Parameters.AddWithValue("@fechaDeEmision", boleta.FechaDeEmision);
                 comando.Parameters.AddWithValue("@sueldoNeto", boleta.SueldoNeto);
                 comando.Parameters.AddWithValue("@totalDeHoras", boleta.TotalDeHoras);
                 comando.Parameters.AddWithValue("@totalDeDescuentos", boleta.TotalDeDescuentos);
                 comando.Parameters.AddWithValue("@totalDeIngresos", boleta.TotalDeIngresos);
-                comando.Parameters.AddWithValue("@idContrato", boleta.Contrato.Codigo);
-                comando.Parameters.AddWithValue("@idConceptoDeIngresoDescuento", boleta.ConceptoDeIngresoDescuento);//no tiene codigo
-                comando.Parameters.AddWithValue("@idPeriodoDePago", boleta.PeriodoDePago);//no tiene codigo
+                comando.Parameters.AddWithValue("@codigoContrato", boleta.Contrato.Codigo);
+                comando.Parameters.AddWithValue("@idConceptoDeIngresoDescuento", boleta.ConceptoDeIngresoDescuento.CodigoConcepto);//no tiene codigo
+                comando.Parameters.AddWithValue("@idPeriodoDePago", boleta.PeriodoDePago.CodigoPeriodo);//no tiene codigo
+              
                 comando.ExecuteNonQuery();
             }
             catch (Exception err)

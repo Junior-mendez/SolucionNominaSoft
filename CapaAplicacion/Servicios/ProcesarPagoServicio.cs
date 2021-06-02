@@ -69,9 +69,9 @@ namespace CapaAplicacion.Servicios
         private BoletaDePago generarBoleta(Contrato contrato, ConceptoDeIngresoDescuento concepto, PeriodoDePago periodo)
         {
             RegistroDePago registroDePago = new RegistroDePago();
-            BoletaDePago boleta = new BoletaDePago();
+            BoletaDePago boleta = new BoletaDePago(contrato, periodo,concepto);
 
-            boleta = registroDePago.registrarPago(contrato, periodo);
+            boleta = registroDePago.registrarPago(contrato, periodo,concepto);
             boleta.Contrato = contrato;
             boleta.ConceptoDeIngresoDescuento = concepto;
             return boleta;
@@ -98,7 +98,7 @@ namespace CapaAplicacion.Servicios
             {
                 concepto = conceptoDAO.buscarConcepto(contratoVigente, periodoDePago);
                 boletaDAO.guardarBoleta(generarBoleta(contratoVigente, concepto, periodoDePago));//llama a registro de pago
-                listaDeBoletas.Add(new BoletaDePago(contratoVigente, periodoDePago));
+                listaDeBoletas.Add(new BoletaDePago(contratoVigente, periodoDePago,concepto));
             }
             periodoDePagoDAO.actualizarPeriodo(periodoDePago);
             gestorAccesoDatos.cerrarConexion();
