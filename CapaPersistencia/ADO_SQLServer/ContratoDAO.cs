@@ -52,16 +52,16 @@ namespace CapaPersistencia.ADO_SQLServer
             }
         }
 
-        public List<Contrato> listarContrato(string estado)
+        public List<Contrato> listarContrato(string estado,DateTime fechaInicio, DateTime fechaFin)
         {
             List<Contrato> listaDeContratos = new List<Contrato>();
             Contrato contrato;
             string consultaSQL;
-            consultaSQL = "SELECT codigoContrato,cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar,c.codigoafp,dniEmpleado,a.porcentajeAfp,a.nombreAfp FROM Contrato c inner join Afp a on c.codigoAfp=a.codigoAfp WHERE estado like '%" + estado + "%' order by cargo";
+            consultaSQL = "SELECT codigoContrato,cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar,c.codigoafp,dniEmpleado,a.porcentajeAfp,a.nombreAfp FROM Contrato c inner join Afp a on c.codigoAfp=a.codigoAfp WHERE estado like '%" + estado + "%' and c.fechaInicio<='"+fechaInicio+ "' and c.fechaFin>='"+fechaFin+"'  order by cargo";
             try
             {
                 SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
-                while (resultadoSQL.Read())
+                while (resultadoSQL.Read()) 
                 {
                     contrato = obtenerContrato(resultadoSQL);
                     listaDeContratos.Add(contrato);
@@ -76,8 +76,9 @@ namespace CapaPersistencia.ADO_SQLServer
 
         public Contrato buscarUltimoContrato(string dni)
         {
-            Contrato contrato = null;
-            string consultaSQL = "select TOP 1 codigoContrato, cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar, codigoafp, dniEmpleado from Contrato where dniEmpleado = '" + dni + "'";
+            Afp afp = new Afp();
+            Contrato contrato = new Contrato(afp);
+            string consultaSQL = "select TOP 1 codigoContrato, cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar, c.codigoafp, dniEmpleado,a.nombreAfp,a.porcentajeAfp from Contrato c inner join Afp a on a.codigoAfp=c.codigoAfp where dniEmpleado= '" + dni + "'";
             try
             {
                 SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
@@ -145,23 +146,23 @@ namespace CapaPersistencia.ADO_SQLServer
             return contrato;
         }
 
-        public void editarContrato(Contrato contrato)
+        public void editarContrato(int codigo,string cargo, double pago, int horas, DateTime fechaIni, DateTime fechaFin,int codigoAfp,Boolean asigFam)
         {
             //**********************************************************************************
             SqlCommand comando;
-            string consultaSQL = "update Contrato  set cargo= @cargo, pagoPorHora=@pagoPorHora, horasSemana=@horasSemana, codigoafp=@codigoafp" +
-                "fechaInicio=@fechaInicio, fechaFin=@fechaFin, asignacionFamiliar=@asignacionFamiliar where codigoContrato='" + contrato.Codigo + "'";
+            string consultaSQL = "update Contrato  set cargo= @cargo, pagoPorHora=@pagoPorHora, horasSemana=@horasSemana, codigoafp=@codigoAfp," +
+                "fechaInicio=@fechaInicio, fechaFin=@fechaFin, asignacionFamiliar=@asignacionFamiliar where codigoContrato='" + codigo + "'";
 
             try
             {
                 comando = gestorSQL.obtenerComandoSQL(consultaSQL);
-                comando.Parameters.AddWithValue("@cargo", contrato.Cargo);
-                comando.Parameters.AddWithValue("@pagoPorHora", contrato.PagoPorHora);
-                comando.Parameters.AddWithValue("@horasSemana", contrato.HorasSemana);
-                comando.Parameters.AddWithValue("@fechaInicio", contrato.FechaInicio);
-                comando.Parameters.AddWithValue("@fechaFin", contrato.FechaFin);
-                comando.Parameters.AddWithValue("@codigoafp", contrato.Afp.CodigoAfp);
-                comando.Parameters.AddWithValue("@asignacionFamiliar", Convert.ToInt32(contrato.AsignacionFamiliar));
+                comando.Parameters.AddWithValue("@cargo", cargo);
+                comando.Parameters.AddWithValue("@pagoPorHora", pago);
+                comando.Parameters.AddWithValue("@horasSemana", horas);
+                comando.Parameters.AddWithValue("@fechaInicio", fechaIni);
+                comando.Parameters.AddWithValue("@fechaFin", fechaFin);
+                comando.Parameters.AddWithValue("@codigoAfp", codigoAfp);
+                comando.Parameters.AddWithValue("@asignacionFamiliar", asigFam);
 
                 comando.ExecuteNonQuery();
             }

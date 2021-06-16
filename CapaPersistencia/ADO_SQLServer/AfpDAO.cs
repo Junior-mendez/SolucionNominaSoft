@@ -39,7 +39,7 @@ namespace CapaPersistencia.ADO_SQLServer
             return listaDeAfp;
         }*/
 
-        public Afp buscarPorCodigo(int codigoAfp)
+        public Afp buscarPorCodigo(string nombre)
         {
             Afp afp;
             string storeProcedureSql = "sp_contrato_getafp";
@@ -47,7 +47,7 @@ namespace CapaPersistencia.ADO_SQLServer
             {
                 SqlCommand command;
                 command = gestorSQL.obtenerComandoDeProcedimiento(storeProcedureSql);
-                command.Parameters.AddWithValue("@codigoAfp", codigoAfp);
+                command.Parameters.AddWithValue("@nombre", nombre);
                 SqlDataReader resultSql = command.ExecuteReader();
                 if (resultSql.Read())
                 {

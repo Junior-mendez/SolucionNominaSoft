@@ -31,11 +31,12 @@ namespace CapaDominio.Servicios
             boleta.TotalDeHoras= boleta.CalcularTotalDeHoras();//r13
             boleta.SueldoBasico = boleta.CalcularSueldoBasico();//r7
             boleta.AsignacionFamiliar = boleta.Contrato.CalcularAsignacionFamiliar();//r8
+            boleta.DescuentoAfp = boleta.CalcularDescuentosAfp(boleta.SueldoBasico, contrato.Afp.PorcentajeAfp);
             boleta.TotalDeDescuentos = boleta.CalcularTotalDescuento(boleta, concepto);//r11
-            boleta.DescuentoAfp = boleta.CalcularDescuentosAfp(boleta.SueldoBasico,contrato.Afp.PorcentajeAfp);
             boleta.TotalDeIngresos = boleta.CalcularTotalDeIngresos( concepto,  contrato);//r9
             boleta.FechaDeEmision = DateTime.Now;
-            //boleta.SueldoNeto = boleta.CalcularSueldoNeto();//r12
+            boleta.SueldoNeto = boleta.CalcularSueldoNeto();//r12
+
 
             return boleta;
         }

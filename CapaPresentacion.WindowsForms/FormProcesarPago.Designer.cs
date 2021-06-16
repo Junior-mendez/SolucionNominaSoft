@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBoxPeriodo = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textCodigo = new System.Windows.Forms.TextBox();
-            this.btnProcesar = new System.Windows.Forms.Button();
-            this.dateFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.dateFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.dateFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.btnProcesar = new System.Windows.Forms.Button();
+            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBoxPeriodo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,40 +55,21 @@
             this.groupBoxPeriodo.TabStop = false;
             this.groupBoxPeriodo.Text = "Periodo";
             // 
-            // label1
+            // dateFechaFin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código: ";
+            this.dateFechaFin.Enabled = false;
+            this.dateFechaFin.Location = new System.Drawing.Point(105, 121);
+            this.dateFechaFin.Name = "dateFechaFin";
+            this.dateFechaFin.Size = new System.Drawing.Size(200, 20);
+            this.dateFechaFin.TabIndex = 8;
             // 
-            // label2
+            // dateFechaInicio
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 92);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fecha Inicio: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Fecha Fin:";
-            // 
-            // textCodigo
-            // 
-            this.textCodigo.Enabled = false;
-            this.textCodigo.Location = new System.Drawing.Point(105, 58);
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(100, 20);
-            this.textCodigo.TabIndex = 3;
+            this.dateFechaInicio.Enabled = false;
+            this.dateFechaInicio.Location = new System.Drawing.Point(105, 92);
+            this.dateFechaInicio.Name = "dateFechaInicio";
+            this.dateFechaInicio.Size = new System.Drawing.Size(200, 20);
+            this.dateFechaInicio.TabIndex = 7;
             // 
             // btnProcesar
             // 
@@ -100,21 +81,40 @@
             this.btnProcesar.UseVisualStyleBackColor = true;
             this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
-            // dateFechaInicio
+            // textCodigo
             // 
-            this.dateFechaInicio.Enabled = false;
-            this.dateFechaInicio.Location = new System.Drawing.Point(105, 92);
-            this.dateFechaInicio.Name = "dateFechaInicio";
-            this.dateFechaInicio.Size = new System.Drawing.Size(200, 20);
-            this.dateFechaInicio.TabIndex = 7;
+            this.textCodigo.Enabled = false;
+            this.textCodigo.Location = new System.Drawing.Point(105, 58);
+            this.textCodigo.Name = "textCodigo";
+            this.textCodigo.Size = new System.Drawing.Size(100, 20);
+            this.textCodigo.TabIndex = 3;
             // 
-            // dateFechaFin
+            // label3
             // 
-            this.dateFechaFin.Enabled = false;
-            this.dateFechaFin.Location = new System.Drawing.Point(105, 121);
-            this.dateFechaFin.Name = "dateFechaFin";
-            this.dateFechaFin.Size = new System.Drawing.Size(200, 20);
-            this.dateFechaFin.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(28, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Fecha Fin:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Fecha Inicio: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Código: ";
             // 
             // FormProcesarPago
             // 
@@ -124,6 +124,7 @@
             this.Controls.Add(this.groupBoxPeriodo);
             this.Name = "FormProcesarPago";
             this.Text = "FormProcesarPago";
+            this.Load += new System.EventHandler(this.FormProcesarPago_Load);
             this.groupBoxPeriodo.ResumeLayout(false);
             this.groupBoxPeriodo.PerformLayout();
             this.ResumeLayout(false);

@@ -57,10 +57,10 @@ namespace CapaAplicacion.Servicios
 
         }
 
-        private List<Contrato> buscarContratosActivos()
+        private List<Contrato> buscarContratosActivos(PeriodoDePago periodo)
         {
             gestorAccesoDatos.abrirConexion();
-            List<Contrato> contratos = contratoDAO.listarContrato("1");
+            List<Contrato> contratos = contratoDAO.listarContrato("1",periodo.FechaInicio,periodo.FechaFin);
             gestorAccesoDatos.cerrarConexion();
             return contratos;
         }
@@ -90,15 +90,17 @@ namespace CapaAplicacion.Servicios
         }*/
         public List<BoletaDePago> generarBoletas(PeriodoDePago periodoDePago)
         {
-            List<Contrato> contratosVigentes = buscarContratosActivos();//busca todos los contratos activos contrato DAO lsitarcontrato
+            List<Contrato> contratosVigentes = buscarContratosActivos(periodoDePago);//busca todos los contratos activos contrato DAO lsitarcontrato
             List<BoletaDePago> listaDeBoletas = new List<BoletaDePago>();
             ConceptoDeIngresoDescuento concepto = new ConceptoDeIngresoDescuento(periodoDePago);
+            BoletaDePago boleta = new BoletaDePago();
             gestorAccesoDatos.abrirConexion();
             foreach (Contrato contratoVigente in contratosVigentes)
             {
                 concepto = conceptoDAO.buscarConcepto(contratoVigente, periodoDePago);
-                boletaDAO.guardarBoleta(generarBoleta(contratoVigente, concepto, periodoDePago));//llama a registro de pago
-                listaDeBoletas.Add(new BoletaDePago(contratoVigente, periodoDePago,concepto));
+                boleta = generarBoleta(contratoVigente, concepto, periodoDePago);
+                boletaDAO.guardarBoleta(boleta);//llama a registro de pago
+                listaDeBoletas.Add(boleta);
             }
             periodoDePagoDAO.actualizarPeriodo(periodoDePago);
             gestorAccesoDatos.cerrarConexion();

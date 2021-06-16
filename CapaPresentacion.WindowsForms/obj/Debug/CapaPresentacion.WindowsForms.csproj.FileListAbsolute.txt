@@ -69,3 +69,4 @@ D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsF
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.FormRegistrarContrato.resources
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.FormRegistroEmpleado.resources
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.FormProcesarPago.resources
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.FormBoletasPago.resources

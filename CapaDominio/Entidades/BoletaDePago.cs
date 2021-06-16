@@ -66,7 +66,7 @@ namespace CapaDominio.Entidades
         public Double CalcularDescuentosAfp(Double sueldoBasico,float porcentajeAfp)
         {
             Double descuentoAFp;
-            descuentoAFp = sueldoBasico * (porcentajeAfp / 100);
+            descuentoAFp = sueldoBasico * (porcentajeAfp);
             return descuentoAFp;
         }
         public double CalcularSueldoBasico()//r7

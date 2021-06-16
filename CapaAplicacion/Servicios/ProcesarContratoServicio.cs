@@ -102,10 +102,10 @@ namespace CapaAplicacion.Servicios
             return false;
         }
 
-        public void editarContrato(Contrato contrato)
+        public void editarContrato(int codigo, string cargo, double pago, int horas, DateTime fechaIni, DateTime fechaFin, int codigoAfp, Boolean asigFam)
         {
             gestorAccesoDatos.abrirConexion();//crear Transaccion
-            contratoDAO.editarContrato(contrato);
+            contratoDAO.editarContrato( codigo,  cargo,  pago,  horas,  fechaIni,  fechaFin,  codigoAfp,  asigFam);
             gestorAccesoDatos.cerrarConexion();//cerrar Transaccion
 
         }
@@ -117,10 +117,10 @@ namespace CapaAplicacion.Servicios
             gestorAccesoDatos.cerrarConexion();//cerrar Transaccion
 
         }
-        public Afp buscarAfp(int codigo)//*********************************
+        public Afp buscarAfp(string nombre)//*********************************
         {
             gestorAccesoDatos.abrirConexion();
-            Afp afp = afpDAO.buscarPorCodigo(codigo);
+            Afp afp = afpDAO.buscarPorCodigo(nombre);
             gestorAccesoDatos.cerrarConexion();
 
             return afp;

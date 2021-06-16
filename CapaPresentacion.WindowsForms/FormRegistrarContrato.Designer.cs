@@ -45,9 +45,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxContrato = new System.Windows.Forms.GroupBox();
+            this.comboBoxAfp = new System.Windows.Forms.ComboBox();
             this.checkAsignacion = new System.Windows.Forms.CheckBox();
             this.textHoraSemana = new System.Windows.Forms.TextBox();
-            this.textCuentaAfp = new System.Windows.Forms.TextBox();
             this.dateFechaFin = new System.Windows.Forms.DateTimePicker();
             this.dateFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.textCargo = new System.Windows.Forms.TextBox();
@@ -58,8 +58,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBoxContrato.SuspendLayout();
             this.SuspendLayout();
@@ -94,7 +95,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(62, 21);
             this.button3.TabIndex = 15;
-            this.button3.Text = "Validar";
+            this.button3.Text = "Buscar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -218,9 +219,9 @@
             // 
             // groupBoxContrato
             // 
+            this.groupBoxContrato.Controls.Add(this.comboBoxAfp);
             this.groupBoxContrato.Controls.Add(this.checkAsignacion);
             this.groupBoxContrato.Controls.Add(this.textHoraSemana);
-            this.groupBoxContrato.Controls.Add(this.textCuentaAfp);
             this.groupBoxContrato.Controls.Add(this.dateFechaFin);
             this.groupBoxContrato.Controls.Add(this.dateFechaInicio);
             this.groupBoxContrato.Controls.Add(this.textCargo);
@@ -240,6 +241,14 @@
             this.groupBoxContrato.Text = "Datos Contrato";
             this.groupBoxContrato.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // comboBoxAfp
+            // 
+            this.comboBoxAfp.FormattingEnabled = true;
+            this.comboBoxAfp.Location = new System.Drawing.Point(113, 83);
+            this.comboBoxAfp.Name = "comboBoxAfp";
+            this.comboBoxAfp.Size = new System.Drawing.Size(209, 21);
+            this.comboBoxAfp.TabIndex = 19;
+            // 
             // checkAsignacion
             // 
             this.checkAsignacion.AutoSize = true;
@@ -256,13 +265,6 @@
             this.textHoraSemana.Name = "textHoraSemana";
             this.textHoraSemana.Size = new System.Drawing.Size(89, 20);
             this.textHoraSemana.TabIndex = 17;
-            // 
-            // textCuentaAfp
-            // 
-            this.textCuentaAfp.Location = new System.Drawing.Point(113, 83);
-            this.textCuentaAfp.Name = "textCuentaAfp";
-            this.textCuentaAfp.Size = new System.Drawing.Size(209, 20);
-            this.textCuentaAfp.TabIndex = 16;
             // 
             // dateFechaFin
             // 
@@ -325,9 +327,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(24, 86);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 13);
+            this.label12.Size = new System.Drawing.Size(30, 13);
             this.label12.TabIndex = 2;
-            this.label12.Text = "N° Cuenta AFP:";
+            this.label12.Text = "AFP:";
             // 
             // label13
             // 
@@ -347,36 +349,51 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Fecha Inicio:";
             // 
-            // button1
+            // btnRegistrar
             // 
-            this.button1.Location = new System.Drawing.Point(286, 344);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 26);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Registrar Contrato";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegistrar.Location = new System.Drawing.Point(101, 344);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(88, 26);
+            this.btnRegistrar.TabIndex = 16;
+            this.btnRegistrar.Text = "Registrar Contrato";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnGuardar
             // 
-            this.button2.Location = new System.Drawing.Point(612, 335);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 35);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGuardar.Location = new System.Drawing.Point(501, 340);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(106, 30);
+            this.btnGuardar.TabIndex = 17;
+            this.btnGuardar.Text = "Guardar Cambios";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Visible = false;
+            this.btnGuardar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Enabled = false;
+            this.btnEditar.Location = new System.Drawing.Point(333, 344);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(89, 26);
+            this.btnEditar.TabIndex = 18;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // FormRegistrarContrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 382);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.groupBoxContrato);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormRegistrarContrato";
             this.Text = "FormRegistrarContrato";
+            this.Load += new System.EventHandler(this.FormRegistrarContrato_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBoxContrato.ResumeLayout(false);
@@ -409,15 +426,16 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.CheckBox checkAsignacion;
         private System.Windows.Forms.TextBox textHoraSemana;
-        private System.Windows.Forms.TextBox textCuentaAfp;
         private System.Windows.Forms.DateTimePicker dateFechaFin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DateTimePicker dateFechaNacimiento;
         private System.Windows.Forms.TextBox textGrado;
         private System.Windows.Forms.TextBox textEstadoCivil;
         private System.Windows.Forms.TextBox textTelefono;
         private System.Windows.Forms.TextBox textDireccion;
         private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.ComboBox comboBoxAfp;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

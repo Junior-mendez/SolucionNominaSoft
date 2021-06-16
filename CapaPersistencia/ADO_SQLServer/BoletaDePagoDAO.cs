@@ -41,7 +41,9 @@ namespace CapaPersistencia.ADO_SQLServer
                 SqlCommand comando = gestorSQL.obtenerComandoDeProcedimiento(sqlProcedure);
                 comando.Parameters.AddWithValue("@asignacionFamiliar", boleta.AsignacionFamiliar);
                 comando.Parameters.AddWithValue("@fechaDeEmision", boleta.FechaDeEmision);
+                comando.Parameters.AddWithValue("@sueldoBasico", boleta.SueldoBasico);
                 comando.Parameters.AddWithValue("@sueldoNeto", boleta.SueldoNeto);
+                comando.Parameters.AddWithValue("@afp", boleta.DescuentoAfp);
                 comando.Parameters.AddWithValue("@totalDeHoras", boleta.TotalDeHoras);
                 comando.Parameters.AddWithValue("@totalDeDescuentos", boleta.TotalDeDescuentos);
                 comando.Parameters.AddWithValue("@totalDeIngresos", boleta.TotalDeIngresos);

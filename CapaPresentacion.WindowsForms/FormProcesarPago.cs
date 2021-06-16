@@ -40,18 +40,22 @@ namespace CapaPresentacion.WindowsForms
             }
             catch (Exception exception)
             {
-                MessageBox.Show("No existe preiodo Activo");
+                MessageBox.Show("No existe periodo Activo");
+                btnProcesar.Enabled = false;
+
             }
         }
         public void procesarPeriodo()
         {
-            List<BoletaDePago> boletas;
+            List<BoletaDePago> boletas= new List<BoletaDePago>();
             obtenerPeriodo();
             if (periodo != null)
             {
                
                     boletas = procesarPago.generarBoletas(periodo);
-                    MessageBox.Show("Se proceso");
+                    FormBoletasPago formBoletas = new FormBoletasPago(boletas);
+                formBoletas.Show();
+                MessageBox.Show("Se proceso");
              
                
                 //FormPlanillaPagos formPlanillaPagos = new FormPlanillaPagos(boletas);
@@ -59,9 +63,13 @@ namespace CapaPresentacion.WindowsForms
             else
             {
                 //mostrar error *******************************************
-                MessageBox.Show("no hay");
-
+                MessageBox.Show("Error");
             }
+        }
+
+        private void FormProcesarPago_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

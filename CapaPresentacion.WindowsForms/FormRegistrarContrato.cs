@@ -21,6 +21,11 @@ namespace CapaPresentacion.WindowsForms
         public FormRegistrarContrato()
         {
             InitializeComponent();
+            List<string> lista = new List<string>();
+            lista.Add("Prima AFP");
+            lista.Add("AFPIntegra");
+            lista.Add("ProfuturoAFP");
+            comboBoxAfp.DataSource = lista;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -30,7 +35,7 @@ namespace CapaPresentacion.WindowsForms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Validar();
+            Buscar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,7 +52,7 @@ namespace CapaPresentacion.WindowsForms
             contrato.HorasSemana = int.Parse(textHoraSemana.Text);
             contrato.AsignacionFamiliar = checkAsignacion.Checked;
             contrato.Cargo = textCargo.Text;
-            afp = gestionarContrato.buscarAfp(int.Parse(textCuentaAfp.Text));
+            afp = gestionarContrato.buscarAfp(comboBoxAfp.Text);
     
             if(gestionarContrato.guardarContrato(contrato, emp, afp))
             {
@@ -60,7 +65,7 @@ namespace CapaPresentacion.WindowsForms
                 
            
         }
-        public void Validar()
+        public void Buscar()
         {
             String dni = textDni.Text;
             if (string.IsNullOrEmpty(dni))
@@ -82,6 +87,17 @@ namespace CapaPresentacion.WindowsForms
                     if (op)
                     {
                         MessageBox.Show("El Empleado cuenta con Contrato Vigente");
+                        contrato = gestionarContrato.buscarUltimoContrato(dni);
+                        dateFechaInicio.Value = contrato.FechaInicio;
+                        dateFechaFin.Value = contrato.FechaFin;
+                        dateFechaFin.Value = contrato.FechaFin;
+                        comboBoxAfp.Text = contrato.Afp.NombreAfp;
+                        textValorHora.Text = contrato.PagoPorHora.ToString();
+                        textHoraSemana.Text = contrato.HorasSemana.ToString();
+                        checkAsignacion.Checked = contrato.AsignacionFamiliar;
+                        textCargo.Text = contrato.Cargo;
+                        btnEditar.Enabled = true;
+                        btnRegistrar.Enabled = false;
                     }
                     else
                     {
@@ -98,6 +114,36 @@ namespace CapaPresentacion.WindowsForms
         {
             return textDni.Text;
         }
+        public void editar()
+        {
+
+            groupBoxContrato.Enabled = true;
+            btnGuardar.Visible = true;
+        }
+        public void guardar()
+        {
+            Afp afpUpdate = new Afp();
+            int codigo = contrato.Codigo;
+            string cargo = textCargo.Text;
+            double pago = double.Parse(textValorHora.Text);
+            int horas= int.Parse(textHoraSemana.Text);
+            DateTime fechaIni = dateFechaInicio.Value;
+            DateTime fechaFin = dateFechaFin.Value;
+            afpUpdate = gestionarContrato.buscarAfp(comboBoxAfp.Text);
+            int codigoAfp = afpUpdate.CodigoAfp;
+            Boolean asigFam = checkAsignacion.Checked;
+            try
+            {
+                gestionarContrato.editarContrato(codigo, cargo, pago, horas, fechaIni, fechaFin, codigoAfp, asigFam);
+                MessageBox.Show("Contrato  Actualizado");
+                this.Close();
+            }
+            catch(Exception exc)
+            {
+                MessageBox.Show("Contrato no fue Actualizado");
+            }
+            
+        }
         public void limpiar()
         {
             textNombre.Text = "";
@@ -108,7 +154,7 @@ namespace CapaPresentacion.WindowsForms
             textGrado.Text = "";
             dateFechaNacimiento.Value = DateTime.Now;
             textCargo.Text = "";
-            textCuentaAfp.Text = "";
+            comboBoxAfp.Text = "";
             textHoraSemana.Text = "";
             textValorHora.Text = "";
             checkAsignacion.Checked = false;
@@ -118,6 +164,21 @@ namespace CapaPresentacion.WindowsForms
         private void textValorHora_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            guardar();
+        }
+
+        private void FormRegistrarContrato_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            editar();
         }
     }
 }

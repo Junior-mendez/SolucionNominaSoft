@@ -9,6 +9,6 @@ namespace CapaDominio.Contratos
 {
     public interface IAfp
     {
-        Afp buscarPorCodigo(int codigoAfp);
+        Afp buscarPorCodigo(string nombre);
     }
 }
