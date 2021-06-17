@@ -20,12 +20,17 @@ namespace CapaPresentacion.WindowsForms
             
             foreach(BoletaDePago boleta in boletas)
             {
+                Empleado empleado = new Empleado();
+                Contrato contrato = new Contrato(empleado);
                 Double totalHora = boleta.TotalDeHoras;
+                Double valorHora = boleta.Contrato.PagoPorHora;
                 Double sueldoBasico = boleta.SueldoBasico;
                 Double totalIngresos = boleta.TotalDeIngresos;
                 Double totalDescuentos = boleta.TotalDeDescuentos;
                 Double sueldoNeto = boleta.SueldoNeto;
-                dataGridBoletas.Rows.Add(totalHora, sueldoBasico, totalIngresos, totalDescuentos, sueldoNeto);
+                String dniEmpleado = boleta.Contrato.Empleado.Dni;
+                String nombre = boleta.Contrato.Empleado.Nombre;
+                dataGridBoletas.Rows.Add(dniEmpleado, nombre, totalHora, valorHora, sueldoBasico, totalIngresos, totalDescuentos, sueldoNeto);
             }
 
         }

@@ -56,14 +56,20 @@ namespace CapaPersistencia.ADO_SQLServer
         {
             List<Contrato> listaDeContratos = new List<Contrato>();
             Contrato contrato;
-            string consultaSQL;
-            consultaSQL = "SELECT codigoContrato,cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar,c.codigoafp,dniEmpleado,a.porcentajeAfp,a.nombreAfp FROM Contrato c inner join Afp a on c.codigoAfp=a.codigoAfp WHERE estado like '%" + estado + "%' and c.fechaInicio<='"+fechaInicio+ "' and c.fechaFin>='"+fechaFin+"'  order by cargo";
+            
+            string storeProcedureSql = "sp_getContrato";
+            
             try
             {
-                SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
-                while (resultadoSQL.Read()) 
+                SqlCommand command;
+                command = gestorSQL.obtenerComandoDeProcedimiento(storeProcedureSql);
+                command.Parameters.AddWithValue("@estado", estado);
+                command.Parameters.AddWithValue("@fechaIni", fechaInicio);
+                command.Parameters.AddWithValue("@fechaFin", fechaFin);
+                SqlDataReader resultSql = command.ExecuteReader();
+                while (resultSql.Read()) 
                 {
-                    contrato = obtenerContrato(resultadoSQL);
+                    contrato = obtenerContrato(resultSql);
                     listaDeContratos.Add(contrato);
                 }
             }
@@ -129,7 +135,8 @@ namespace CapaPersistencia.ADO_SQLServer
         {
             //revisar el orden en sql como manda las consultas
             Afp afp = new Afp();
-            Contrato contrato = new Contrato( afp);
+            Empleado empleado = new Empleado();
+            Contrato contrato = new Contrato( afp, empleado);
 
             contrato.Codigo = resultadoSQL.GetColumnValue<int>("codigoContrato");
             contrato.Cargo = resultadoSQL.GetColumnValue<String>("cargo");
@@ -142,7 +149,8 @@ namespace CapaPersistencia.ADO_SQLServer
             afp.CodigoAfp = resultadoSQL.GetColumnValue<int>("codigoafp");
             afp.NombreAfp = resultadoSQL.GetColumnValue<String>("nombreAfp");
             afp.PorcentajeAfp = resultadoSQL.GetColumnValue<float>("porcentajeAfp");
-
+            empleado.Dni = resultadoSQL.GetColumnValue<String>("dniEmpleado");
+            empleado.Nombre = resultadoSQL.GetColumnValue<String>("nombre");
             return contrato;
         }
 

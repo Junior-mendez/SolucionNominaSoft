@@ -19,12 +19,23 @@ namespace CapaDominio.Entidades
         private Empleado empleado;
         private Afp afp;
 
-        public Contrato(Afp afp)
+        public Contrato(Afp afp, Empleado empleado)
         {
             this.Afp = afp;
+            this.Empleado = empleado;
         }
         public Contrato()
         {
+        }
+        public Contrato(Empleado empleado )
+        {
+
+            this.Empleado = empleado;
+        }
+        public Contrato(Afp af)
+        {
+
+            this.Afp = afp;
         }
         public bool AsignacionFamiliar { get => asignacionFamiliar; set => asignacionFamiliar = value; }
         public string Cargo { get => cargo; set => cargo = value; }
