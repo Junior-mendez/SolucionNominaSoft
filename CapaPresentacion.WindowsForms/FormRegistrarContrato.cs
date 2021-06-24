@@ -97,6 +97,7 @@ namespace CapaPresentacion.WindowsForms
                         checkAsignacion.Checked = contrato.AsignacionFamiliar;
                         textCargo.Text = contrato.Cargo;
                         btnEditar.Enabled = true;
+                        btnAnular.Enabled = true;
                         btnRegistrar.Enabled = false;
                     }
                     else
@@ -179,6 +180,27 @@ namespace CapaPresentacion.WindowsForms
         private void btnEditar_Click(object sender, EventArgs e)
         {
             editar();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            anularContrato();
+            limpiar();
+            btnEditar.Enabled = false;
+            btnAnular.Enabled = false;
+        }
+        private void anularContrato()
+        {
+            try
+            {
+                gestionarContrato.anularContrato(contrato);
+                MessageBox.Show("Contrato Anulado");
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Error");
+
+            }
         }
     }
 }

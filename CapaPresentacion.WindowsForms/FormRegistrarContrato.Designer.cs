@@ -61,6 +61,7 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAnular = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBoxContrato.SuspendLayout();
             this.SuspendLayout();
@@ -381,11 +382,23 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // btnAnular
+            // 
+            this.btnAnular.Enabled = false;
+            this.btnAnular.Location = new System.Drawing.Point(228, 344);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(84, 25);
+            this.btnAnular.TabIndex = 19;
+            this.btnAnular.Text = "Anular";
+            this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // FormRegistrarContrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 382);
+            this.Controls.Add(this.btnAnular);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnRegistrar);
@@ -437,5 +450,6 @@
         private System.Windows.Forms.TextBox textNombre;
         private System.Windows.Forms.ComboBox comboBoxAfp;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnAnular;
     }
 }
