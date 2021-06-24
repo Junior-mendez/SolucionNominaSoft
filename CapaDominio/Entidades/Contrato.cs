@@ -32,7 +32,7 @@ namespace CapaDominio.Entidades
 
             this.Empleado = empleado;
         }
-        public Contrato(Afp af)
+        public Contrato(Afp afp)
         {
 
             this.Afp = afp;

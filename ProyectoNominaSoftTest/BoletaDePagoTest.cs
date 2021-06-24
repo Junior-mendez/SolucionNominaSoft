@@ -14,9 +14,9 @@ namespace ProyectoNominaSoftTest
             Contrato contrato = new Contrato(afp);
             BoletaDePago boleta = new BoletaDePago(contrato);
             Double sueldoBasico = 930;
-            contrato.Afp.PorcentajeAfp = 10;
-            Double descuentoAfp = boleta.CalcularDescuentosAfp(sueldoBasico, contrato.Afp.PorcentajeAfp);
-            Double descuentoAfp_esperado = 93;
+            contrato.Afp.PorcentajeAfp = 0.1F;
+            int descuentoAfp = Convert.ToInt32(boleta.CalcularDescuentosAfp(sueldoBasico, contrato.Afp.PorcentajeAfp));
+            int descuentoAfp_esperado = 93;
             Assert.AreEqual(descuentoAfp, descuentoAfp_esperado);
         }
         [TestMethod]
@@ -54,9 +54,9 @@ namespace ProyectoNominaSoftTest
             boleta.ConceptoDeIngresoDescuento.MontoPorHorasAusentes = 20;
             boleta.ConceptoDeIngresoDescuento.MontoDeOtrosDescuentos = 5;
             boleta.ConceptoDeIngresoDescuento.MontoPorAdelantos = 50;
-            boleta.Contrato.Afp.PorcentajeAfp = 10;
-            Double totalDescuento = boleta.CalcularTotalDescuento();
-            Double totalDescuentoEsperado = 267;
+            boleta.Contrato.Afp.PorcentajeAfp = 0.1F;
+            int totalDescuento = Convert.ToInt32(boleta.CalcularTotalDescuento( boleta,  concepto));
+            int totalDescuentoEsperado = 75;
             Assert.AreEqual(totalDescuento, totalDescuentoEsperado);
         }
         [TestMethod]
@@ -83,9 +83,9 @@ namespace ProyectoNominaSoftTest
             boleta.Contrato.AsignacionFamiliar = true;
             boleta.ConceptoDeIngresoDescuento.MontoDeOtrosIngresos = 30;
             boleta.ConceptoDeIngresoDescuento.MontoPorHorasExtras = 20;
-            boleta.ConceptoDeIngresoDescuento.MontoPorReintegros = 10;
-            Double totalIngreso = boleta.CalcularTotalDeIngresos();
-            Double totalIngresoEsperado = 2073;
+            boleta.ConceptoDeIngresoDescuento.MontoPorReintegros = 0.1F;
+            int totalIngreso = Convert.ToInt32(boleta.CalcularTotalDeIngresos( concepto,  contrato));
+            int totalIngresoEsperado = 143;
             Assert.AreEqual(totalIngreso, totalIngresoEsperado);
         }
     }

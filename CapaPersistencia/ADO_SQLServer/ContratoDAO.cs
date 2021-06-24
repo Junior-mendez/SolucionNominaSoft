@@ -84,13 +84,16 @@ namespace CapaPersistencia.ADO_SQLServer
         {
             Afp afp = new Afp();
             Contrato contrato = new Contrato(afp);
-            string consultaSQL = "select TOP 1 codigoContrato, cargo,pagoPorHora,horasSemana,estado,fechaInicio,fechaFin,asignacionFamiliar, c.codigoafp, dniEmpleado,a.nombreAfp,a.porcentajeAfp from Contrato c inner join Afp a on a.codigoAfp=c.codigoAfp where dniEmpleado= '" + dni + "'";
+            string storeProcedureSQL = "sp_getContratoUltimo";
             try
             {
-                SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
-                if (resultadoSQL.Read())
+                SqlCommand command;
+                command = gestorSQL.obtenerComandoDeProcedimiento(storeProcedureSQL);
+                command.Parameters.AddWithValue("@dni", dni);
+                SqlDataReader resultSql = command.ExecuteReader();
+                if (resultSql.Read())
                 {
-                    contrato = obtenerContrato(resultadoSQL);
+                    contrato = obtenerContrato(resultSql);
                 }
                 else
                 {
