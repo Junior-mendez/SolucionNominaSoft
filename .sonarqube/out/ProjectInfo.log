@@ -1,0 +1,28 @@
+Product projects
+---------------------------------------
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\CapaDominio.csproj
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\CapaPersistencia.csproj
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\CapaAplicacion.csproj
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\CapaPresentacion.WindowsForms.csproj
+
+
+Test projects
+---------------------------------------
+D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\ProyectoNominaSoftTest\ProyectoNominaSoftTest.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

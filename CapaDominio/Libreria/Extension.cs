@@ -40,9 +40,9 @@ namespace CapaDominio.Libreria
                         return (T)value;
                 }
             }
-            catch (Exception exception)
+            catch (Exception )
             {
-                throw exception;
+                throw ;
             }
         }
 

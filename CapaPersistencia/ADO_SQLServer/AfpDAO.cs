@@ -18,26 +18,7 @@ namespace CapaPersistencia.ADO_SQLServer
             this.gestorSQL = (GestorSQL)gestorSQL; // (GestorSQL) el objeto de tipo interfaz se hace un moldeo al tipo original
         }
 
-        /*public List<Afp> buscar(string nombreAfp)
-        {
-            List<Afp> listaDeAfp = new List<Afp>();
-            Afp afp;
-            string consultaSQL = "select codigoAfp, nombreAfp, porcentajeAfp from Afp where  nombreAfp like '%" + nombreAfp + "%' order by  nombreAfp";
-            try
-            {
-                SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(consultaSQL);
-                while (resultadoSQL.Read())
-                {
-                    afp = obtenerAfp(resultadoSQL);
-                    listaDeAfp.Add(afp);
-                }
-            }
-            catch (Exception err)
-            {
-                throw err;
-            }
-            return listaDeAfp;
-        }*/
+       
 
         public Afp buscarPorCodigo(string nombre)
         {

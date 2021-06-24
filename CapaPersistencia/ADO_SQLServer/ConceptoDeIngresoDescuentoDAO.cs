@@ -22,27 +22,7 @@ namespace CapaPersistencia.ADO_SQLServer
             this.contratoDAO = (ContratoDAO)contratoDAO;
             this.periodoDePagoDAO = (PeriodoDePagoDAO)periodoDePagoDAO;
         }
-        /*
-        public List<ConceptoDeIngresoDescuento> listarConceptosDeIngresoDescuento()
-        {
-            List<ConceptoDeIngresoDescuento> listaDeConceptosIngresoDescuento = new List<ConceptoDeIngresoDescuento>();
-            ConceptoDeIngresoDescuento aux;
-            string listaDeConceptos = "select montoDeOtrosDescuentos,montoDeOtrosIngresos,montoPorAdelantos,montoPorHorasAusentes,montoPorHorasExtras, montoPorReintegros, codigoConcepto, codigoPeriodo, codigoContrato from conceptodeingresosdescuentos ";//preguntar codigo periodo porque en el sql esta como FK_Codigo
-            try
-            {
-                SqlDataReader resultadoSQL = gestorSQL.ejecutarConsulta(listaDeConceptos);
-                while (resultadoSQL.Read())
-                {
-                    aux = obtenerConceptos(resultadoSQL);
-                    listaDeConceptosIngresoDescuento.Add(aux);
-                }
-            }
-            catch(Exception err)
-            {
-                throw err;
-            }
-            return listaDeConceptosIngresoDescuento;
-        }*/
+        
 
         private ConceptoDeIngresoDescuento obtenerConceptos(SqlDataReader resultadoSQL,PeriodoDePago periodo)
         {

@@ -15,6 +15,6 @@ namespace CapaDominio.Contratos
         void crearContrato(Contrato contrato,Empleado empleado, Afp afp);
         Contrato buscarUltimoContrato(string codigo);
         void anularContrato(Contrato contrato);
-        void editarContrato(int codigo, string cargo, double pago, int horas, DateTime fechaIni, DateTime fechaFin, int codigoAfp, Boolean asigFam);
+        void editarContrato(Contrato contrato);
     }
 }

@@ -24,7 +24,6 @@ namespace CapaDominio.Entidades
         {
             if ( DateTime.Now >= FechaFin)
             {
-                //throw new Exception("No se encuentra dentro del periodo de pago");
                 return true;
             }
             else
@@ -38,9 +37,7 @@ namespace CapaDominio.Entidades
         {
             TimeSpan difFechas = FechaFin - FechaInicio;
             int day = difFechas.Days;
-            //Double day = difFechas.TotalDays;
             return day / 7;
         }
-        //verificar periodo de pago se implementara en la capa persistencia
     }
 }

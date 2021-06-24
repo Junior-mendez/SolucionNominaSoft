@@ -1,0 +1,12 @@
+h
+_D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\AfpDAO.csutf-8q
+hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\BoletaDePagoDAO.csutf-8
+vD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\ConceptoDeIngresoDescuentoDAO.csutf-8m
+dD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\ContratoDAO.csutf-8m
+dD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\EmpleadoDAO.csutf-8k
+bD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\GestorSQL.csutf-8r
+iD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\PeriodoDePagoDAO.csutf-8q
+hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\FabricaDatos\FabricaAbstracta.csutf-8q
+hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\FabricaDatos\FabricaSQLServer.csutf-8k
+bD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\Properties\AssemblyInfo.csutf-8ê
+ÑD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.csutf-8

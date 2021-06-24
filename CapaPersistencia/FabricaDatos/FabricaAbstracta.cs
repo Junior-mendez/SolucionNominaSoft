@@ -28,7 +28,6 @@ namespace CapaPersistencia.FabricaDatos
 
         public abstract IAfp creaAfp(IGestorAccesoADatos gestorAccesoADatos);
 
-        //public abstract IPeriodo buscarPeriodoFecha(DateTime fechaInicio, DateTime fechaFin);
 
 
 

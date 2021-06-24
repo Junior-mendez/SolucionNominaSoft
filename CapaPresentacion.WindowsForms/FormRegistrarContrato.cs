@@ -105,7 +105,7 @@ namespace CapaPresentacion.WindowsForms
                         groupBoxContrato.Enabled = true;
                     }
                 }
-                catch (Exception exception)
+                catch (Exception )
                 {
                     MessageBox.Show("Empleado No Registrado");
                 }
@@ -124,22 +124,22 @@ namespace CapaPresentacion.WindowsForms
         public void guardar()
         {
             Afp afpUpdate = new Afp();
-            int codigo = contrato.Codigo;
-            string cargo = textCargo.Text;
-            double pago = double.Parse(textValorHora.Text);
-            int horas= int.Parse(textHoraSemana.Text);
-            DateTime fechaIni = dateFechaInicio.Value;
-            DateTime fechaFin = dateFechaFin.Value;
             afpUpdate = gestionarContrato.buscarAfp(comboBoxAfp.Text);
-            int codigoAfp = afpUpdate.CodigoAfp;
-            Boolean asigFam = checkAsignacion.Checked;
+            Contrato contratoUpdate = new Contrato(afpUpdate);
+            contratoUpdate.Codigo = contrato.Codigo;
+            contratoUpdate.Cargo = textCargo.Text;
+            contratoUpdate.PagoPorHora= double.Parse(textValorHora.Text);
+            contratoUpdate.HorasSemana = int.Parse(textHoraSemana.Text);
+            contratoUpdate.FechaInicio = dateFechaInicio.Value;
+            contratoUpdate.FechaFin= dateFechaFin.Value;
+            contratoUpdate.AsignacionFamiliar= checkAsignacion.Checked;
             try
             {
-                gestionarContrato.editarContrato(codigo, cargo, pago, horas, fechaIni, fechaFin, codigoAfp, asigFam);
+                gestionarContrato.editarContrato(contratoUpdate);
                 MessageBox.Show("Contrato  Actualizado");
                 this.Close();
             }
-            catch(Exception exc)
+            catch(Exception )
             {
                 MessageBox.Show("Contrato no fue Actualizado");
             }

@@ -65,7 +65,7 @@ namespace CapaDominio.Entidades
 
         public double CalcularAsignacionFamiliar()//r8
         {
-            if (AsignacionFamiliar == true)
+            if (AsignacionFamiliar)
             {
                 return 930 * 0.1;
             }
@@ -83,7 +83,7 @@ namespace CapaDominio.Entidades
 
         public Boolean ValidarVigenciaDeContrato()
         {
-            if (fechaFin >= DateTime.Now && estado == true)
+            if (fechaFin >= DateTime.Now && estado )
                 return true;
             return false;
         }

@@ -38,7 +38,7 @@ namespace CapaPresentacion.WindowsForms
             dateFechaInicio.Value = periodo.FechaInicio;
             dateFechaFin.Value = periodo.FechaFin;
             }
-            catch (Exception exception)
+            catch (Exception )
             {
                 MessageBox.Show("No existe periodo Activo");
                 btnProcesar.Enabled = false;
@@ -58,11 +58,9 @@ namespace CapaPresentacion.WindowsForms
                 MessageBox.Show("Se proceso");
              
                
-                //FormPlanillaPagos formPlanillaPagos = new FormPlanillaPagos(boletas);
             }
             else
             {
-                //mostrar error *******************************************
                 MessageBox.Show("Error");
             }
         }

@@ -57,9 +57,6 @@ namespace CapaDominio.Entidades
         public PeriodoDePago PeriodoDePago { get => periodoDePago; set => periodoDePago = value; }
         public ConceptoDeIngresoDescuento ConceptoDeIngresoDescuento { get => conceptoDeIngresoDescuento; set => conceptoDeIngresoDescuento = value; }
 
-        //public double SueldoMinimo { get => sueldoMinimo; set => sueldoMinimo = value; }
-
-        //reglas
 
       
 
@@ -96,11 +93,6 @@ namespace CapaDominio.Entidades
         {
             return sueldoBasico + contrato.CalcularAsignacionFamiliar() + concepto.CalcularConceptoIngreso();//r14
         }
-        /*
-        public override bool Equals(object obj)
-        {
-            return obj is BoletaDePago pago &&
-                   SueldoMinimo == pago.SueldoMinimo;
-        }*/
+       
     }
 }

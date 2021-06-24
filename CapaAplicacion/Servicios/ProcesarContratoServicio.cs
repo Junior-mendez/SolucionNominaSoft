@@ -71,20 +71,11 @@ namespace CapaAplicacion.Servicios
             return contrato;
         }
 
-        private Contrato buscarUltimoContratoActivo(String Dni)
-        {
-            gestorAccesoDatos.abrirConexion();
-            Contrato contrato = contratoDAO.buscarUltimoContrato(Dni);
-            gestorAccesoDatos.cerrarConexion();
-            return contrato;
-        }
         //CREAR UN CONTRATO
         public Boolean guardarContrato(Contrato contrato, Empleado empleado, Afp afp)
         {
             RegistroDeContrato registroDeContrato = new RegistroDeContrato();
 
-
-                //Contrato anterior = buscarUltimoContratoActivo(empleado.Dni);
             try{
                 if (registroDeContrato.validarContrato(contrato, empleado, afp))
                 {
@@ -102,10 +93,10 @@ namespace CapaAplicacion.Servicios
             return false;
         }
 
-        public void editarContrato(int codigo, string cargo, double pago, int horas, DateTime fechaIni, DateTime fechaFin, int codigoAfp, Boolean asigFam)
+        public void editarContrato(Contrato contrato)
         {
             gestorAccesoDatos.abrirConexion();//crear Transaccion
-            contratoDAO.editarContrato( codigo,  cargo,  pago,  horas,  fechaIni,  fechaFin,  codigoAfp,  asigFam);
+            contratoDAO.editarContrato( contrato);
             gestorAccesoDatos.cerrarConexion();//cerrar Transaccion
 
         }

@@ -101,9 +101,9 @@ namespace CapaPersistencia.ADO_SQLServer
 
                 }
             }
-            catch (Exception err)
+            catch (Exception )
             {
-                throw err;
+                throw ;
             }
             return contrato;
         }
@@ -136,7 +136,6 @@ namespace CapaPersistencia.ADO_SQLServer
 
         private Contrato obtenerContrato(SqlDataReader resultadoSQL)
         {
-            //revisar el orden en sql como manda las consultas
             Afp afp = new Afp();
             Empleado empleado = new Empleado();
             Contrato contrato = new Contrato( afp, empleado);
@@ -157,8 +156,16 @@ namespace CapaPersistencia.ADO_SQLServer
             return contrato;
         }
 
-        public void editarContrato(int codigo,string cargo, double pago, int horas, DateTime fechaIni, DateTime fechaFin,int codigoAfp,Boolean asigFam)
+        public void editarContrato(Contrato contrato)
         {
+            int codigo = contrato.Codigo;
+            string cargo = contrato.Cargo;
+            double pago = contrato.PagoPorHora;
+            int horas = contrato.HorasSemana;
+            DateTime fechaIni = contrato.FechaInicio;
+            DateTime fechaFin = contrato.FechaFin;
+            int codigoAfp = contrato.Afp.CodigoAfp;
+            Boolean asigFam = contrato.AsignacionFamiliar;
             //**********************************************************************************
             SqlCommand comando;
             string consultaSQL = "update Contrato  set cargo= @cargo, pagoPorHora=@pagoPorHora, horasSemana=@horasSemana, codigoafp=@codigoAfp," +
@@ -188,7 +195,8 @@ namespace CapaPersistencia.ADO_SQLServer
         {
             //**********************************************************************************
             SqlCommand comando;
-            string consultaSQL = "update Contrato  set estado= @estado where codigoContrato='" + contrato.Codigo + "'";
+          
+            string consultaSQL = "update Contrato  set estado= @estad where codigoContrato='" + contrato.Codigo + "'";
 
             try
             {

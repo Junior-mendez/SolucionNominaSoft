@@ -17,7 +17,7 @@ namespace CapaDominio.Servicios
                 List<BoletaDePago> Boletas = new List<BoletaDePago>();
                 foreach (Contrato contrato in contratos)
                 {
-                    if(contrato.Estado == true && contrato.FechaFin>periodo.FechaInicio)
+                    if(contrato.Estado && contrato.FechaFin>periodo.FechaInicio)
                     {
                         Boletas.Add(registrarPago(contrato, periodo,concepto));
                         
