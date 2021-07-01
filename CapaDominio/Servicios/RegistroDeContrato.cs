@@ -11,30 +11,29 @@ namespace CapaDominio.Servicios
     {
         public Boolean validarContratoTotal(Contrato contrato, Empleado empleado, Afp afp, Contrato anteriorContrato)
         {
-            if (contrato.ValidarVigenciaDeContrato() == false)//r1
+            if (!contrato.ValidarVigenciaDeContrato())//r1
             {
-                //throw new Exception("No se puede guardar, el pago por hora no es el correcto para su grado academico.");
                 return false;
             }
-            if (contrato.VerificarContratoAnterior(anteriorContrato) == false)//r2
+            if (!contrato.VerificarContratoAnterior(anteriorContrato))//r2
             {
-                //throw new Exception("No se puede guardar, el pago por hora no es el correcto para su grado academico.");
+                
                 return false;
             }
-            //validar la fecha de mi contrato anterior (base de datos) y compararla con mi nuevo contrato
-            if (contrato.VerfificarFechaFin() == false)//r3
+            
+            if (!contrato.VerfificarFechaFin())//r3
             {
-                //throw new Exception("No se puede guardar, la fecha de inicio y fin son incorrectas.");
+               
                 return false;
             }
-            if (contrato.ValidarHorasSemanales() == false)//r4
+            if (!contrato.ValidarHorasSemanales())//r4
             {
-                //throw new Exception("No se puede guardar, las horas semanales son incorrectas.");
+               
                 return false;
             }
-            if (contrato.ValidarValorPorHora() == false)//r5
+            if (!contrato.ValidarValorPorHora())//r5
             {
-                //throw new Exception("No se puede guardar, el pago por hora no es el correcto para su grado academico.");
+                
                 return false;
             }
 
@@ -43,25 +42,20 @@ namespace CapaDominio.Servicios
         }
         public Boolean validarContrato(Contrato contrato, Empleado empleado, Afp afp)
         {
-            if (contrato.ValidarVigenciaDeContrato() == false)//r1
+            if (!contrato.ValidarVigenciaDeContrato())//r1
             {
-                //throw new Exception("No se puede guardar, el pago por hora no es el correcto para su grado academico.");
                 return false;
             }
-            //validar la fecha de mi contrato anterior (base de datos) y compararla con mi nuevo contrato
-            if (contrato.VerfificarFechaFin() == false)//r3
+            if (!contrato.VerfificarFechaFin())//r3
             {
-                //throw new Exception("No se puede guardar, la fecha de inicio y fin son incorrectas.");
                 return false;
             }
-            if (contrato.ValidarHorasSemanales() == false)//r4
+            if (!contrato.ValidarHorasSemanales())//r4
             {
-                //throw new Exception("No se puede guardar, las horas semanales son incorrectas.");
                 return false;
             }
-            if (contrato.ValidarValorPorHora() == false)//r5
+            if (!contrato.ValidarValorPorHora())//r5
             {
-                //throw new Exception("No se puede guardar, el pago por hora no es el correcto para su grado academico.");
                 return false;
             }
             return true;
@@ -70,7 +64,6 @@ namespace CapaDominio.Servicios
         public Contrato editarContrato(Contrato contrato, Contrato contratoEditado)
         {
             contrato = contratoEditado;
-            //throw new Exception("Contrato Editado.");
             return contrato;
         }
          public void anularContrato(Contrato contrato)

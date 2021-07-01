@@ -1,8 +1,6 @@
-¯
-gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormBoletasPago.cs 8j-r(	
- !"$&')+,./0x‚ !”
-dD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormContrato.cs 8r 	
-!#$&'(‚•
+«
+gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormBoletasPago.cs 8r(	
+ !#%&(*+,-.x‚ •
 `D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormMenu.cs 8r"	 !"#$%&‚#Æ
 hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormProcesarPago.cs 8r>	
  !"#$%&'()*+,./012345789:=>?@ABDEGHIx‚$%&'+,3479:@õ

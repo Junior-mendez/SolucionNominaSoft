@@ -9,7 +9,6 @@ namespace CapaDominio.Contratos
 {
     public interface IConcepto
     {
-        ConceptoDeIngresoDescuento buscarConcepto(Contrato contrato, PeriodoDePago periodoDePago);// DUDA
-        // ConceptoDeIngresoDescuento buscarConcepto(int codigo);// DUDA
+        ConceptoDeIngresoDescuento buscarConcepto(Contrato contrato, PeriodoDePago periodoDePago);
     }
 }

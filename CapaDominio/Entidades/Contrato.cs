@@ -49,14 +49,12 @@ namespace CapaDominio.Entidades
         public Afp Afp { get => afp; set => afp = value; }
         public bool Estado { get => estado; set => estado = value; }
 
-        //reglas de negocio
 
        
         public Boolean ValidarValorPorHora()
         {
             if(pagoPorHora>=10 && pagoPorHora <= 60)
             {
-                //añadir Metodo para guardar en la base de datos
                 return true;
 
             }
@@ -83,11 +81,10 @@ namespace CapaDominio.Entidades
 
         public Boolean ValidarVigenciaDeContrato()
         {
-            if (fechaFin >= DateTime.Now && estado )
+            if (fechaFin >= DateTime.Now && estado)
                 return true;
             return false;
         }
-        //validar Fecha del anterior contrato necesitamos la base de datos, se implementara en la capa 4
         public Boolean VerificarContratoAnterior(Contrato anterior)
         {
             if (fechaInicio>anterior.fechaFin)

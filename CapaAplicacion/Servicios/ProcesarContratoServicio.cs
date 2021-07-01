@@ -38,7 +38,7 @@ namespace CapaAplicacion.Servicios
 
         }
 
-        public Boolean buscarUltimoContratoVigente(String Dni)//*********************************
+        public Boolean buscarUltimoContratoVigente(String Dni)
         {
             
             try
@@ -55,14 +55,13 @@ namespace CapaAplicacion.Servicios
                     return false;
                 }
             }
-            catch(Exception exception)
+            catch(Exception )
             {
                 return false;
             }
-            return false;
         }
 
-        public Contrato buscarUltimoContrato(String Dni)//*********************************
+        public Contrato buscarUltimoContrato(String Dni)
         {
             gestorAccesoDatos.abrirConexion();
             Contrato contrato = contratoDAO.buscarUltimoContrato(Dni);
@@ -80,13 +79,13 @@ namespace CapaAplicacion.Servicios
                 if (registroDeContrato.validarContrato(contrato, empleado, afp))
                 {
 
-                    gestorAccesoDatos.abrirConexion();//crear Transaccion
+                    gestorAccesoDatos.abrirConexion();
                     contratoDAO.crearContrato(contrato, empleado, afp);
-                    gestorAccesoDatos.cerrarConexion();//cerrar Transaccion
+                    gestorAccesoDatos.cerrarConexion();
                     return true;
                 }
             }
-            catch(Exception exception)
+            catch(Exception )
             {
                 throw new Exception("Datos Incorrectos");
             }
@@ -95,20 +94,20 @@ namespace CapaAplicacion.Servicios
 
         public void editarContrato(Contrato contrato)
         {
-            gestorAccesoDatos.abrirConexion();//crear Transaccion
+            gestorAccesoDatos.abrirConexion();
             contratoDAO.editarContrato( contrato);
-            gestorAccesoDatos.cerrarConexion();//cerrar Transaccion
+            gestorAccesoDatos.cerrarConexion();
 
         }
 
         public void anularContrato(Contrato contrato)
         {
-            gestorAccesoDatos.abrirConexion();//crear Transaccion
+            gestorAccesoDatos.abrirConexion();
             contratoDAO.anularContrato(contrato);
-            gestorAccesoDatos.cerrarConexion();//cerrar Transaccion
+            gestorAccesoDatos.cerrarConexion();
 
         }
-        public Afp buscarAfp(string nombre)//*********************************
+        public Afp buscarAfp(string nombre)
         {
             gestorAccesoDatos.abrirConexion();
             Afp afp = afpDAO.buscarPorCodigo(nombre);

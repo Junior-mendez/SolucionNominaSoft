@@ -16,7 +16,6 @@ namespace CapaPresentacion.WindowsForms
         public FormBoletasPago(List<BoletaDePago> boletas)
         {
             InitializeComponent();
-            //dataGridBoletas.DataSource = boletas;
             
             foreach(BoletaDePago boleta in boletas)
             {
@@ -42,7 +41,6 @@ namespace CapaPresentacion.WindowsForms
 
         private void FormBoletasPago_Load(object sender, EventArgs e)
         {
-            //this.boletasTableAdapter.Fill(this.baseNominaSoftDataSet.BoletaDePago);
         }
     }
 }

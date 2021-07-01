@@ -10,8 +10,8 @@ namespace CapaDominio.Contratos
     public interface IContrato
     {
 
-        List<Contrato> listarContrato(string estado,DateTime fechaInicio,DateTime fechaFin);//llama a metodo de la clase contrato dao, mostrara todos los contratos guardados
-        Contrato buscarContrato(int codigo);//busca contrato por codigo
+        List<Contrato> listarContrato(string estado,DateTime fechaInicio,DateTime fechaFin);
+        Contrato buscarContrato(int codigo);
         void crearContrato(Contrato contrato,Empleado empleado, Afp afp);
         Contrato buscarUltimoContrato(string codigo);
         void anularContrato(Contrato contrato);

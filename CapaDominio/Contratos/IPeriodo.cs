@@ -9,8 +9,8 @@ namespace CapaDominio.Contratos
 {
     public interface IPeriodo
     {
-        PeriodoDePago buscarPeriodo(int codigoPeriodo); // DUDA
-        PeriodoDePago buscarPeriodoActivo(Boolean estado); // DUDA
+        PeriodoDePago buscarPeriodo(int codigoPeriodo);
+        PeriodoDePago buscarPeriodoActivo(Boolean estado);
         void actualizarPeriodo(PeriodoDePago periodoDePago);
         PeriodoDePago buscarPeriodoFecha(DateTime fechaInicio, DateTime fechaFin);
     }

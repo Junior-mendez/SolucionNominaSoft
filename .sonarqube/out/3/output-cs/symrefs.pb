@@ -4,59 +4,32 @@ gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.Windows
  (
 
  
-2 9+ 2Z
-! '# )# )& ,' -) /$ *% +    &
- !1 9
+2 9+ 2Z
+! '# )# )& ,' -) /$ *% +  &
+ !1 9
 
- !
-  !!> G
-  !!I R
- #!!T `
- $!!b o
- &	!!q €
- !
-!!‚ Œ
- "!!) 4
-   !!6 <
+ !
+    > G
+    I R
+ #  T `
+ $  b o
+ &	  q €
+ !
+  ‚ Œ
+ "  ) 4
+   6 <
 
-&& 3
+%% 3
 
-&&; A
+%%; A
 
-&&] ^
+%%] ^
 
-++ )
+** )
 
-++1 7
+**1 7
 
-++C D‚
-dD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormContrato.cs
-
- %
-
- 
-
-! 2
-
- 
-
- &
-
-. 4
-
-@ A
-
- !
-
-) /
-
-; <
-
-## )
-
-##1 7
-
-##C D¨
+**C D¨
 `D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormMenu.cs
 
  !
@@ -105,7 +78,7 @@ hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.Windows
 
 DD2 8
 
-DDD E²
+DDD E¤
 
 mD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormRegistrarContrato.cs
 
@@ -196,9 +169,7 @@ mD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.Windows
 ¹¹> ?
 
 ÀÀ #
-»» 
-
-ÇÇ  †
+»» †
 lD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormRegistroEmpleado.cs
 
  -

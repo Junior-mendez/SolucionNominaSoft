@@ -20,16 +20,16 @@ _D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQL
 hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\BoletaDePagoDAO.cs
 
   
- #   % .
+ # % .
 
- 
-3 <( 1
+ 
+3 <( 1
 
- !x
-/ 5!!G M""C I##A G$$? E%%8 >&&A G''F L((D J))C I**Q W++D J
-   M Y‚
-   "!! "" ## $$ %% && '' (( )) ** ++ -- 
-//  11 È
+ !x
+/ 5G MC IA G  ? E!!8 >""A G##F L$$D J%%C I&&Q W''D J
+ M Y‚
+ "      !! "" ## $$ %% && '' )) 
+++  -- È
 vD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\ConceptoDeIngresoDescuentoDAO.cs
 
  .

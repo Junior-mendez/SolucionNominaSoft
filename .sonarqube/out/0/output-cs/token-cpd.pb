@@ -44,15 +44,15 @@ WD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Contratos\IB
 
  
 { 
-void 
-guardarBoleta 
-( 
-BoletaDePago '
-boleta( .
-). /
-;/ 0
-} 
-} ‹
+void 
+guardarBoleta 
+( 
+BoletaDePago '
+boleta( .
+). /
+;/ 0
+} 
+} ‹
 YD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Contratos\IConcepto.cs
 	namespace 	
 CapaDominio
@@ -81,8 +81,8 @@ YD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Contratos\IC
 periodoDePagoS `
 )` a
 ;a b
-} 
-} ê
+} 
+} ê
 
 YD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Contratos\IContrato.cs
 	namespace 	
@@ -996,56 +996,56 @@ jD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Entidades\Co
 valueF K
 ;K L
 }M N
-public!! &
-ConceptoDeIngresoDescuento!! )
-(!!) *
-)!!* +
-{"" 	
-}$$ 	
-public%% &
-ConceptoDeIngresoDescuento%% )
-(%%) *
-PeriodoDePago%%* 7
-periodo%%8 ?
-)%%? @
-{&& 	
-this'' 
-.'' 
-PeriodoDePago'' 
-=''  
-periodo''! (
-;''( )
-}(( 	
-public** 
-double** #
-CalcularConceptoIngreso** -
-(**- .
-)**. /
-{++ 	
-return,, 
-montoPorHorasExtras,, &
-+,,' (
-montoPorReintegros,,) ;
-+,,< = 
-montoDeOtrosIngresos,,> R
-;,,R S
-}.. 	
-public11 
-double11 %
-CalcularConceptoDescuento11 /
-(11/ 0
-)110 1
-{22 	
-return44 !
-montoPorHorasAusentes44 (
-+44) *
-montoPorAdelantos44+ <
-+44= >"
-montoDeOtrosDescuentos44? U
-;44U V
-}66 	
-}77 
-}88 ª;
+public   &
+ConceptoDeIngresoDescuento   )
+(  ) *
+)  * +
+{!! 	
+}## 	
+public$$ &
+ConceptoDeIngresoDescuento$$ )
+($$) *
+PeriodoDePago$$* 7
+periodo$$8 ?
+)$$? @
+{%% 	
+this&& 
+.&& 
+PeriodoDePago&& 
+=&&  
+periodo&&! (
+;&&( )
+}'' 	
+public)) 
+double)) #
+CalcularConceptoIngreso)) -
+())- .
+))). /
+{** 	
+return++ 
+montoPorHorasExtras++ &
++++' (
+montoPorReintegros++) ;
++++< = 
+montoDeOtrosIngresos++> R
+;++R S
+}-- 	
+public00 
+double00 %
+CalcularConceptoDescuento00 /
+(00/ 0
+)000 1
+{11 	
+return33 !
+montoPorHorasAusentes33 (
++33) *
+montoPorAdelantos33+ <
++33= >"
+montoDeOtrosDescuentos33? U
+;33U V
+}55 	
+}66 
+}77 ª;
 XD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Entidades\Contrato.cs
 	namespace 	
 CapaDominio
@@ -1307,164 +1307,164 @@ XD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Entidades\Co
 value22< A
 ;22A B
 }22C D
-public77 
-Boolean77 
-ValidarValorPorHora77 *
-(77* +
-)77+ ,
-{88 	
-if99 
-(99 
-pagoPorHora99 
->=99 
-$num99 
-&&99 !
-pagoPorHora99" -
-<=99. 0
-$num991 3
-)993 4
-{:: 
-return<< 
-true<< 
-;<< 
-}>> 
-return?? 
-false?? 
-;?? 
-}@@ 	
-publicBB 
-doubleBB &
-CalcularAsignacionFamiliarBB 0
-(BB0 1
-)BB1 2
-{CC 	
-ifDD 
-(DD 
-AsignacionFamiliarDD "
-)DD" #
-{EE 
-returnFF 
-$numFF 
-*FF 
-$numFF  
-;FF  !
-}GG 
-returnHH 
-$numHH 
-;HH 
-}II 	
-publicMM 
-BooleanMM !
-ValidarHorasSemanalesMM ,
-(MM, -
-)MM- .
-{NN 	
-ifOO 
-(OO 
-horasSemanaOO 
->=OO 
-$numOO  
-&&OO! #
-horasSemanaOO$ /
-<=OO0 2
-$numOO3 5
-&&OO6 8
-horasSemanaOO9 D
-%OOD E
-$numOOE F
-==OOF H
-$numOOH I
-)OOI J
-returnPP 
-truePP 
-;PP 
-returnQQ 
-falseQQ 
-;QQ 
-}RR 	
-publicTT 
-BooleanTT %
-ValidarVigenciaDeContratoTT 0
-(TT0 1
-)TT1 2
-{UU 	
-ifVV 
-(VV 
-fechaFinVV 
->=VV 
-DateTimeVV $
-.VV$ %
-NowVV% (
-&&VV) +
-estadoVV, 2
-)VV3 4
-returnWW 
-trueWW 
-;WW 
-returnXX 
-falseXX 
-;XX 
-}YY 	
-public[[ 
-Boolean[[ %
-VerificarContratoAnterior[[ 0
-([[0 1
-Contrato[[1 9
-anterior[[: B
-)[[B C
-{\\ 	
-if]] 
-(]] 
-fechaInicio]] 
->]] 
-anterior]] $
-.]]$ %
-fechaFin]]% -
-)]]- .
-{^^ 
-return__ 
-true__ 
-;__ 
-}`` 
-returnaa 
-falseaa 
-;aa 
-}bb 	
-publicdd 
-Booleandd 
-VerfificarFechaFindd )
-(dd) *
-)dd* +
-{ee 	
-ifff 
-(ff 
-fechaFinff 
->=ff 
-fechaInicioff '
-.ff' (
-	AddMonthsff( 1
-(ff1 2
-$numff2 3
-)ff3 4
-&&ff5 7
-fechaFinff8 @
-<=ffA C
-fechaInicioffD O
-.ffO P
-	AddMonthsffP Y
-(ffY Z
-$numffZ \
-)ff\ ]
-)ff] ^
-returngg 
-truegg 
-;gg 
-returnhh 
-falsehh 
-;hh 
-}ii 	
-}kk 
-}ll ·
+public66 
+Boolean66 
+ValidarValorPorHora66 *
+(66* +
+)66+ ,
+{77 	
+if88 
+(88 
+pagoPorHora88 
+>=88 
+$num88 
+&&88 !
+pagoPorHora88" -
+<=88. 0
+$num881 3
+)883 4
+{99 
+return:: 
+true:: 
+;:: 
+}<< 
+return== 
+false== 
+;== 
+}>> 	
+public@@ 
+double@@ &
+CalcularAsignacionFamiliar@@ 0
+(@@0 1
+)@@1 2
+{AA 	
+ifBB 
+(BB 
+AsignacionFamiliarBB "
+)BB" #
+{CC 
+returnDD 
+$numDD 
+*DD 
+$numDD  
+;DD  !
+}EE 
+returnFF 
+$numFF 
+;FF 
+}GG 	
+publicKK 
+BooleanKK !
+ValidarHorasSemanalesKK ,
+(KK, -
+)KK- .
+{LL 	
+ifMM 
+(MM 
+horasSemanaMM 
+>=MM 
+$numMM  
+&&MM! #
+horasSemanaMM$ /
+<=MM0 2
+$numMM3 5
+&&MM6 8
+horasSemanaMM9 D
+%MMD E
+$numMME F
+==MMF H
+$numMMH I
+)MMI J
+returnNN 
+trueNN 
+;NN 
+returnOO 
+falseOO 
+;OO 
+}PP 	
+publicRR 
+BooleanRR %
+ValidarVigenciaDeContratoRR 0
+(RR0 1
+)RR1 2
+{SS 	
+ifTT 
+(TT 
+fechaFinTT 
+>=TT 
+DateTimeTT $
+.TT$ %
+NowTT% (
+&&TT) +
+estadoTT, 2
+)TT2 3
+returnUU 
+trueUU 
+;UU 
+returnVV 
+falseVV 
+;VV 
+}WW 	
+publicXX 
+BooleanXX %
+VerificarContratoAnteriorXX 0
+(XX0 1
+ContratoXX1 9
+anteriorXX: B
+)XXB C
+{YY 	
+ifZZ 
+(ZZ 
+fechaInicioZZ 
+>ZZ 
+anteriorZZ $
+.ZZ$ %
+fechaFinZZ% -
+)ZZ- .
+{[[ 
+return\\ 
+true\\ 
+;\\ 
+}]] 
+return^^ 
+false^^ 
+;^^ 
+}__ 	
+publicaa 
+Booleanaa 
+VerfificarFechaFinaa )
+(aa) *
+)aa* +
+{bb 	
+ifcc 
+(cc 
+fechaFincc 
+>=cc 
+fechaIniciocc '
+.cc' (
+	AddMonthscc( 1
+(cc1 2
+$numcc2 3
+)cc3 4
+&&cc5 7
+fechaFincc8 @
+<=ccA C
+fechaInicioccD O
+.ccO P
+	AddMonthsccP Y
+(ccY Z
+$numccZ \
+)cc\ ]
+)cc] ^
+returndd 
+truedd 
+;dd 
+returnee 
+falseee 
+;ee 
+}ff 	
+}hh 
+}ii ·
 XD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Entidades\Empleado.cs
 	namespace 	
 CapaDominio
@@ -2171,7 +2171,7 @@ ComVisible 
 ($$ 
 $str$$ (
 )$$( )
-]$$) *¨!
+]$$) *ô
 bD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Servicios\RegistroDeContrato.cs
 	namespace 	
 CapaDominio
@@ -2208,206 +2208,197 @@ bD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Servicios\Re
 )t u
 { 	
 if 
-( 
-contrato 
-. %
-ValidarVigenciaDeContrato 2
-(2 3
-)3 4
-==5 7
-false8 =
-)= >
+( 
+! 
+contrato 
+. %
+ValidarVigenciaDeContrato 3
+(3 4
+)4 5
+)5 6
 { 
-return 
-false 
-; 
-} 
-if 
-( 
-contrato 
-. %
-VerificarContratoAnterior 2
-(2 3
-anteriorContrato3 C
-)C D
-==E G
-falseH M
-)M N
-{ 
-return 
-false 
-; 
-} 
-if 
-( 
-contrato 
-. 
-VerfificarFechaFin +
-(+ ,
-), -
-==. 0
-false1 6
-)6 7
-{ 
-return 
-false 
-; 
-} 
-if 
-( 
-contrato 
-. !
-ValidarHorasSemanales .
-(. /
-)/ 0
-==1 3
-false4 9
-)9 :
-{ 
-return!! 
-false!! 
-;!! 
-}"" 
-if## 
-(## 
-contrato## 
-.## 
-ValidarValorPorHora## ,
-(##, -
-)##- .
-==##/ 1
-false##2 7
-)##7 8
-{$$ 
-return&& 
-false&& 
-;&& 
-}'' 
-return** 
-true** 
-;** 
-}++ 	
-public,, 
-Boolean,, 
-validarContrato,, &
-(,,& '
-Contrato,,' /
-contrato,,0 8
-,,,8 9
-Empleado,,: B
-empleado,,C K
-,,,K L
-Afp,,M P
-afp,,Q T
-),,T U
-{-- 	
-if.. 
-(.. 
-contrato.. 
-... %
-ValidarVigenciaDeContrato.. 2
-(..2 3
-)..3 4
-==..5 7
-false..8 =
-)..= >
-{// 
-return11 
-false11 
-;11 
-}22 
-if44 
-(44 
-contrato44 
-.44 
-VerfificarFechaFin44 +
-(44+ ,
-)44, -
-==44. 0
-false441 6
-)446 7
-{55 
+return 
+false 
+; 
+} 
+if 
+( 
+! 
+contrato 
+. %
+VerificarContratoAnterior 3
+(3 4
+anteriorContrato4 D
+)D E
+)E F
+{ 
+return 
+false 
+; 
+} 
+if 
+( 
+! 
+contrato 
+. 
+VerfificarFechaFin ,
+(, -
+)- .
+). /
+{ 
+return 
+false 
+; 
+} 
+if 
+( 
+! 
+contrato 
+. !
+ValidarHorasSemanales /
+(/ 0
+)0 1
+)1 2
+{ 
+return   
+false   
+;   
+}!! 
+if"" 
+("" 
+!"" 
+contrato"" 
+."" 
+ValidarValorPorHora"" -
+(""- .
+)"". /
+)""/ 0
+{## 
+return%% 
+false%% 
+;%% 
+}&& 
+return)) 
+true)) 
+;)) 
+}** 	
+public++ 
+Boolean++ 
+validarContrato++ &
+(++& '
+Contrato++' /
+contrato++0 8
+,++8 9
+Empleado++: B
+empleado++C K
+,++K L
+Afp++M P
+afp++Q T
+)++T U
+{,, 	
+if-- 
+(-- 
+!-- 
+contrato-- 
+.-- %
+ValidarVigenciaDeContrato-- 3
+(--3 4
+)--4 5
+)--5 6
+{.. 
+return// 
+false// 
+;// 
+}00 
+if11 
+(11 
+!11 
+contrato11 
+.11 
+VerfificarFechaFin11 ,
+(11, -
+)11- .
+)11. /
+{22 
+return33 
+false33 
+;33 
+}44 
+if55 
+(55 
+!55 
+contrato55 
+.55 !
+ValidarHorasSemanales55 /
+(55/ 0
+)550 1
+)551 2
+{66 
 return77 
 false77 
 ;77 
 }88 
 if99 
-(99 
-contrato99 
-.99 !
-ValidarHorasSemanales99 .
-(99. /
-)99/ 0
-==991 3
-false994 9
-)999 :
+(99 
+!99 
+contrato99 
+.99 
+ValidarValorPorHora99 -
+(99- .
+)99. /
+)99/ 0
 {:: 
-return<< 
-false<< 
-;<< 
-}== 
-if>> 
-(>> 
-contrato>> 
-.>> 
-ValidarValorPorHora>> ,
-(>>, -
-)>>- .
-==>>/ 1
-false>>2 7
-)>>7 8
-{?? 
-returnAA 
-falseAA 
-;AA 
-}BB 
-returnCC 
-trueCC 
-;CC 
+return;; 
+false;; 
+;;; 
+}<< 
+return== 
+true== 
+;== 
+}>> 	
+public@@ 
+Contrato@@ 
+editarContrato@@ &
+(@@& '
+Contrato@@' /
+contrato@@0 8
+,@@8 9
+Contrato@@: B
+contratoEditado@@C R
+)@@R S
+{AA 	
+contratoBB 
+=BB 
+contratoEditadoBB &
+;BB& '
+returnCC 
+contratoCC 
+;CC 
 }DD 	
-publicFF 
-ContratoFF 
-editarContratoFF &
-(FF& '
-ContratoFF' /
-contratoFF0 8
-,FF8 9
-ContratoFF: B
-contratoEditadoFFC R
-)FFR S
-{GG 	
-contratoHH 
-=HH 
-contratoEditadoHH &
-;HH& '
-returnJJ 
-contratoJJ 
-;JJ 
-}KK 	
-publicLL	 
-voidLL 
-anularContratoLL #
-(LL# $
-ContratoLL$ ,
-contratoLL- 5
-)LL5 6
-{MM 	
-contratoNN 
-.NN 
-EstadoNN 
-=NN 
-falseNN #
-;NN# $
-throwOO 
-newOO 
-	ExceptionOO 
-(OO  
-$strOO  3
-)OO3 4
-;OO4 5
-}QQ 	
-}RR 
-}SS Ý 
+publicEE	 
+voidEE 
+anularContratoEE #
+(EE# $
+ContratoEE$ ,
+contratoEE- 5
+)EE5 6
+{FF 	
+contratoGG 
+.GG 
+EstadoGG 
+=GG 
+falseGG #
+;GG# $
+throwHH 
+newHH 
+	ExceptionHH 
+(HH  
+$strHH  3
+)HH3 4
+;HH4 5
+}JJ 	
+}KK 
+}LL Ý 
 ^D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaDominio\Servicios\RegistroDePago.cs
 	namespace		 	
 CapaDominio		

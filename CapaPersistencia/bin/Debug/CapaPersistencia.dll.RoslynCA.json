@@ -54,27 +54,6 @@
           }
         },
         {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 9,
-                  "endLine": 15,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S101",
           "level": "warning",
           "message": "Rename class 'FabricaSQLServer' to match pascal case naming rules, consider using 'FabricaSqlServer'.",
@@ -87,90 +66,6 @@
                   "startColumn": 18,
                   "endLine": 11,
                   "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'gestorSQL' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 27,
-                  "endLine": 15,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'AfpDAO' to match pascal case naming rules, consider using 'AfpDao'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'gestorSQL' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 27,
-                  "endLine": 14,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'BoletaDePagoDAO' to match pascal case naming rules, consider using 'BoletaDePagoDao'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 18,
-                  "endLine": 12,
-                  "endColumn": 33
                 }
               }
             }
@@ -285,6 +180,195 @@
           }
         },
         {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ConceptoDeIngresoDescuentoDAO' to match pascal case naming rules, consider using 'ConceptoDeIngresoDescuentoDao'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ConceptoDeIngresoDescuentoDAO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'gestorSQL' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 27,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'BoletaDePagoDAO' to match pascal case naming rules, consider using 'BoletaDePagoDao'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'gestorSQL' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/PeriodoDePagoDAO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 27,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'gestorSQL' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 27,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'AfpDAO' to match pascal case naming rules, consider using 'AfpDao'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'PeriodoDePagoDAO' to match pascal case naming rules, consider using 'PeriodoDePagoDao'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/PeriodoDePagoDAO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'gestorSQL' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/EmpleadoDAO.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 27,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'EmpleadoDAO' to match pascal case naming rules, consider using 'EmpleadoDao'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/EmpleadoDAO.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2933",
           "level": "warning",
           "message": "Make 'gestorSQL' 'readonly'.",
@@ -348,27 +432,6 @@
           }
         },
         {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'ConceptoDeIngresoDescuentoDAO' to match pascal case naming rules, consider using 'ConceptoDeIngresoDescuentoDao'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ConceptoDeIngresoDescuentoDAO.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S4487",
           "level": "warning",
           "message": "Remove this unread private field 'empleadoDAO' or refactor the code to use its value.",
@@ -418,90 +481,6 @@
             {
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'gestorSQL' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/PeriodoDePagoDAO.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 27,
-                  "endLine": 15,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'PeriodoDePagoDAO' to match pascal case naming rules, consider using 'PeriodoDePagoDao'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/PeriodoDePagoDAO.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'gestorSQL' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/EmpleadoDAO.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 27,
-                  "endLine": 15,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'EmpleadoDAO' to match pascal case naming rules, consider using 'EmpleadoDao'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/EmpleadoDAO.cs",
                 "region": {
                   "startLine": 13,
                   "startColumn": 18,
@@ -606,11 +585,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ConceptoDeIngresoDescuentoDAO.cs",
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
                 "region": {
-                  "startLine": 60,
+                  "startLine": 44,
                   "startColumn": 17,
-                  "endLine": 60,
+                  "endLine": 44,
                   "endColumn": 27
                 }
               }
@@ -633,48 +612,6 @@
                   "startColumn": 27,
                   "endLine": 36,
                   "endColumn": 72
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3445",
-          "level": "warning",
-          "message": "Consider using 'throw;' to preserve the stack trace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 17,
-                  "endLine": 49,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ConceptoDeIngresoDescuentoDAO.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 27,
-                  "endLine": 55,
-                  "endColumn": 65
                 }
               }
             }
@@ -726,18 +663,39 @@
           }
         },
         {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 27,
+                  "endLine": 39,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S3445",
           "level": "warning",
           "message": "Consider using 'throw;' to preserve the stack trace.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/EmpleadoDAO.cs",
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ConceptoDeIngresoDescuentoDAO.cs",
                 "region": {
-                  "startLine": 50,
+                  "startLine": 60,
                   "startColumn": 17,
-                  "endLine": 50,
-                  "endColumn": 33
+                  "endLine": 60,
+                  "endColumn": 27
                 }
               }
             }
@@ -768,17 +726,164 @@
           }
         },
         {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ConceptoDeIngresoDescuentoDAO.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 27,
+                  "endLine": 55,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 27,
+                  "endLine": 127,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 13,
+                  "endLine": 107,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'dni' to 'codigo' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 44,
+                  "endLine": 111,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 27,
+                  "endLine": 100,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'dni' to 'codigo' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 53,
+                  "endLine": 83,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S3445",
           "level": "warning",
           "message": "Consider using 'throw;' to preserve the stack trace.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/EmpleadoDAO.cs",
                 "region": {
-                  "startLine": 44,
+                  "startLine": 50,
                   "startColumn": 17,
-                  "endLine": 44,
+                  "endLine": 50,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3445",
+          "level": "warning",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 17,
+                  "endLine": 189,
                   "endColumn": 27
                 }
               }
@@ -837,195 +942,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 127,
-                  "startColumn": 27,
-                  "endLine": 127,
-                  "endColumn": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/AfpDAO.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 27,
-                  "endLine": 39,
-                  "endColumn": 72
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2737",
-          "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 104,
-                  "startColumn": 13,
-                  "endLine": 107,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 100,
-                  "startColumn": 27,
-                  "endLine": 100,
-                  "endColumn": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'dni' to 'codigo' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 53,
-                  "endLine": 83,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'dni' to 'codigo' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 44,
-                  "endLine": 111,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3445",
-          "level": "warning",
-          "message": "Consider using 'throw;' to preserve the stack trace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/ContratoDAO.cs",
-                "region": {
-                  "startLine": 189,
-                  "startColumn": 17,
-                  "endLine": 189,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 23,
-                  "endLine": 28,
-                  "endColumn": 87
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 23,
-                  "endLine": 55,
-                  "endColumn": 98
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
                 "region": {
                   "startLine": 41,
@@ -1049,31 +965,10 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
                 "region": {
-                  "startLine": 68,
+                  "startLine": 28,
                   "startColumn": 23,
-                  "endLine": 68,
-                  "endColumn": 99
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 23,
-                  "endLine": 81,
-                  "endColumn": 99
+                  "endLine": 28,
+                  "endColumn": 87
                 }
               }
             }
@@ -1112,9 +1007,93 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
                 "region": {
+                  "startLine": 55,
+                  "startColumn": 23,
+                  "endLine": 55,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 23,
+                  "endLine": 81,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 23,
+                  "endLine": 68,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
+                "region": {
                   "startLine": 115,
                   "startColumn": 23,
                   "endLine": 115,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 23,
+                  "endLine": 132,
                   "endColumn": 91
                 }
               }
@@ -1146,18 +1125,18 @@
           }
         },
         {
-          "ruleId": "S112",
+          "ruleId": "S3445",
           "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/GestorSQL.cs",
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPersistencia/ADO_SQLServer/BoletaDePagoDAO.cs",
                 "region": {
-                  "startLine": 132,
-                  "startColumn": 23,
-                  "endLine": 132,
-                  "endColumn": 91
+                  "startLine": 45,
+                  "startColumn": 17,
+                  "endLine": 45,
+                  "endColumn": 27
                 }
               }
             }
@@ -1333,23 +1312,6 @@
               "C#",
               "SonarWay",
               "MainSourceScope"
-            ]
-          }
-        },
-        "S125": {
-          "id": "S125",
-          "shortDescription": "Sections of code should not be commented out",
-          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
             ]
           }
         },

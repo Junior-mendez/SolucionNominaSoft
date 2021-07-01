@@ -74,7 +74,7 @@ namespace CapaDominio.Entidades
 
         public double CalcularSueldoNeto()//r12
         {
-            return totalDeIngresos - totalDeDescuentos;//llamar a los métodos
+            return totalDeIngresos - totalDeDescuentos;
         }
 
 

@@ -12,174 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'exc' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormRegistrarContrato.cs",
-                "region": {
-                  "startLine": 199,
-                  "startColumn": 30,
-                  "endLine": 199,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 13,
-                  "endLine": 19,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 13,
-                  "endLine": 45,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1144",
-          "level": "warning",
-          "message": "Remove the unused private field 'empleado'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormContrato.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 9,
-                  "endLine": 17,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1144",
-          "level": "warning",
-          "message": "Remove the unused private field 'gestionarContrato'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormContrato.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 9,
-                  "endLine": 18,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormContrato.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 22,
-                  "endLine": 25,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormContrato.cs",
-                "region": {
-                  "startLine": 30,
-                  "startColumn": 22,
-                  "endLine": 30,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormContrato.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 22,
-                  "endLine": 35,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1186",
           "level": "warning",
           "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
@@ -314,9 +146,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 24,
                   "startColumn": 24,
-                  "endLine": 25,
+                  "endLine": 24,
                   "endColumn": 33
                 }
               }
@@ -335,9 +167,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 26,
+                  "startLine": 25,
                   "startColumn": 24,
-                  "endLine": 26,
+                  "endLine": 25,
                   "endColumn": 33
                 }
               }
@@ -356,9 +188,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 27,
+                  "startLine": 26,
                   "startColumn": 24,
-                  "endLine": 27,
+                  "endLine": 26,
                   "endColumn": 36
                 }
               }
@@ -377,9 +209,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 28,
+                  "startLine": 27,
                   "startColumn": 24,
-                  "endLine": 28,
+                  "endLine": 27,
                   "endColumn": 37
                 }
               }
@@ -398,9 +230,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 29,
+                  "startLine": 28,
                   "startColumn": 24,
-                  "endLine": 29,
+                  "endLine": 28,
                   "endColumn": 39
                 }
               }
@@ -419,9 +251,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 30,
+                  "startLine": 29,
                   "startColumn": 24,
-                  "endLine": 30,
+                  "endLine": 29,
                   "endColumn": 34
                 }
               }
@@ -440,9 +272,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 31,
+                  "startLine": 30,
                   "startColumn": 24,
-                  "endLine": 31,
+                  "endLine": 30,
                   "endColumn": 35
                 }
               }
@@ -461,9 +293,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 32,
+                  "startLine": 31,
                   "startColumn": 24,
-                  "endLine": 32,
+                  "endLine": 31,
                   "endColumn": 30
                 }
               }
@@ -482,10 +314,31 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 38,
+                  "startLine": 37,
                   "startColumn": 22,
-                  "endLine": 38,
+                  "endLine": 37,
                   "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 22,
+                  "endLine": 42,
+                  "endColumn": 42
                 }
               }
             }
@@ -503,9 +356,9 @@
               "resultFile": {
                 "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaPresentacion.WindowsForms/FormBoletasPago.cs",
                 "region": {
-                  "startLine": 24,
+                  "startLine": 23,
                   "startColumn": 26,
-                  "endLine": 24,
+                  "endLine": 23,
                   "endColumn": 34
                 }
               }
@@ -517,19 +370,6 @@
         }
       ],
       "rules": {
-        "CS0168": {
-          "id": "CS0168",
-          "shortDescription": "La variable está declarada pero nunca se usa",
-          "defaultLevel": "warning",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
         "S1117": {
           "id": "S1117",
           "shortDescription": "Local variables should not shadow class fields",
@@ -547,24 +387,6 @@
             ]
           }
         },
-        "S1144": {
-          "id": "S1144",
-          "shortDescription": "Unused private types or members should be removed",
-          "fullDescription": "private or internal types or private members that are never executed or referenced are dead code: unnecessary, inoperative code that should be removed. Cleaning out dead code decreases the size of the maintained codebase, making it easier to understand the program and preventing bugs from being introduced.",
-          "defaultLevel": "note",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope",
-              "Unnecessary"
-            ]
-          }
-        },
         "S1186": {
           "id": "S1186",
           "shortDescription": "Methods should not be empty",
@@ -573,23 +395,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1186",
           "properties": {
             "category": "Critical Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S125": {
-          "id": "S125",
-          "shortDescription": "Sections of code should not be commented out",
-          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
-          "properties": {
-            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

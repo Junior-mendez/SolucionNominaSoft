@@ -8,7 +8,7 @@ namespace CapaDominio.Entidades
 {
     public class PeriodoDePago
     {
-        private int codigoPeriodo;//codigo
+        private int codigoPeriodo;
         private Boolean estado;
         private DateTime fechaInicio;
         private DateTime fechaFin;

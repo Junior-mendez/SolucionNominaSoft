@@ -8,7 +8,7 @@ namespace CapaDominio.Entidades
 {
     public class ConceptoDeIngresoDescuento
     {
-        private int codigoConcepto;//codigo
+        private int codigoConcepto;
         private double montoDeOtrosDescuentos;
         private double montoDeOtrosIngresos;
         private double montoPorAdelantos;
@@ -29,7 +29,6 @@ namespace CapaDominio.Entidades
         public Contrato Contrato { get => contrato; set => contrato = value; }
 
 
-        //reglas
         public ConceptoDeIngresoDescuento()
         {
 

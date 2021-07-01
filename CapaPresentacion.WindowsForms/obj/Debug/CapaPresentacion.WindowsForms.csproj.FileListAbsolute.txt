@@ -62,7 +62,6 @@ D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsF
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.csproj.CopyComplete
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.exe
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.pdb
-D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.FormContrato.resources
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\obj\Debug\CapaPresentacion.WindowsForms.FormMenu.resources
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaPersistencia.dll
 D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\bin\Debug\CapaPersistencia.pdb

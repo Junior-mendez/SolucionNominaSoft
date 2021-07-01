@@ -52,12 +52,6 @@
     <Compile Include="FormBoletasPago.Designer.cs">
       <DependentUpon>FormBoletasPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormContrato.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormContrato.Designer.cs">
-      <DependentUpon>FormContrato.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,9 +80,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBoletasPago.resx">
       <DependentUpon>FormBoletasPago.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormContrato.resx">
-      <DependentUpon>FormContrato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>

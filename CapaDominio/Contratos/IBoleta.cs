@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CapaDominio.Contratos
 {
-    public interface IBoleta //debe ser de modo publico para poder hacer la implementacion desde boletadao
+    public interface IBoleta 
     {
-        //void guardarListaBoletas(List<BoletaDePago> boletas);
         void guardarBoleta(BoletaDePago boleta);
     }
 }

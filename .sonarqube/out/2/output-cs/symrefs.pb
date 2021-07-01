@@ -1,12 +1,12 @@
 b
-`D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Properties\AssemblyInfo.cs 
+`D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Properties\AssemblyInfo.csˆ
 kD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Servicios\ProcesarContratoServicio.cs
 
  )¾
- +   1* ;* ;"" $$ .. !00 !CC EE SS %UU %bb dd jj ll qq ss F
- ' //$ /DD  +TT cc kk (
+ +   1* ;* ;"" $$ .. !00 !BB DD RR %TT %aa cc ii kk pp rr F
+ ' //$ /CC  +SS bb jj (
  '< G ##  +(
-  I Orr 
+  I Oqq 
 
  '
 
@@ -18,29 +18,25 @@ kD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Servicios
 )): =//E H
 // !11 
 
-:: %
+@@ ,
+@@4 7CCA D
+CC FF 
 
-AA ,
-AA4 7DDA D
-DD GG 
+JJ &
+JJ0 8OO7 ?SS. 6
+JJC KOOA ISS8 @
+JJQ TOOK NSSB E
+LL 1OO &
 
-KK &
-KK0 8PP7 ?TT. 6
-KKC KPPA ITT8 @
-KKQ TPPK NTTB E
-MM 1PP &
+__ "
+__, 4bb( 0
 
-YY %
+gg "
+gg, 4jj' /
 
-`` "
-``, 4cc( 0
-
-hh "
-hh, 4kk' /
-
-oo 
-oo$ *rr- 3
-rr uu ²	
+nn 
+nn$ *qq- 3
+qq tt ²	
 gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Servicios\ProcesarPagoServicio.cs
 
  %Œ

@@ -196,7 +196,7 @@ namespace CapaPresentacion.WindowsForms
                 gestionarContrato.anularContrato(contrato);
                 MessageBox.Show("Contrato Anulado");
             }
-            catch (Exception exc)
+            catch (Exception )
             {
                 MessageBox.Show("Error");
 

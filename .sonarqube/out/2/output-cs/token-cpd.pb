@@ -124,7 +124,7 @@ ComVisible 
 ($$ 
 $str$$ (
 )$$( )
-]$$) *é8
+]$$) *…8
 kD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Servicios\ProcesarContratoServicio.cs
 	namespace 	
 CapaAplicacion
@@ -282,228 +282,223 @@ kD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Servicios
 }99 
 catch:: 
 (:: 
-	Exception:: 
-	exception:: %
-)::% &
+	Exception:: 
+):: 
 {;; 
 return<< 
 false<< 
 ;<< 
-}== 
-return>> 
-false>> 
-;>> 
-}?? 	
-publicAA 
-ContratoAA  
-buscarUltimoContratoAA ,
-(AA, -
-StringAA- 3
-DniAA4 7
-)AA7 8
-{BB 	
-gestorAccesoDatosCC 
-.CC 
-abrirConexionCC +
-(CC+ ,
-)CC, -
-;CC- .
-ContratoDD 
-contratoDD 
-=DD 
-contratoDAODD  +
-.DD+ , 
-buscarUltimoContratoDD, @
-(DD@ A
-DniDDA D
-)DDD E
-;DDE F
-gestorAccesoDatosEE 
-.EE 
-cerrarConexionEE ,
-(EE, -
-)EE- .
-;EE. /
-returnGG 
-contratoGG 
-;GG 
-}HH 	
-publicKK 
-BooleanKK 
-guardarContratoKK &
-(KK& '
-ContratoKK' /
-contratoKK0 8
-,KK8 9
-EmpleadoKK: B
-empleadoKKC K
-,KKK L
-AfpKKM P
-afpKKQ T
-)KKT U
-{LL 	
-RegistroDeContratoMM 
-registroDeContratoMM 1
-=MM2 3
-newMM4 7
-RegistroDeContratoMM8 J
-(MMJ K
-)MMK L
-;MML M
-tryOO 
-{OO 
-ifPP 
-(PP 
-registroDeContratoPP &
-.PP& '
-validarContratoPP' 6
-(PP6 7
-contratoPP7 ?
-,PP? @
-empleadoPPA I
-,PPI J
-afpPPK N
-)PPN O
-)PPO P
-{QQ 
-gestorAccesoDatosSS %
-.SS% &
-abrirConexionSS& 3
-(SS3 4
-)SS4 5
-;SS5 6
-contratoDAOTT 
-.TT  
-crearContratoTT  -
-(TT- .
-contratoTT. 6
-,TT6 7
-empleadoTT8 @
-,TT@ A
-afpTTB E
-)TTE F
-;TTF G
-gestorAccesoDatosUU %
-.UU% &
-cerrarConexionUU& 4
-(UU4 5
-)UU5 6
-;UU6 7
-returnVV 
-trueVV 
-;VV  
-}WW 
-}XX 
-catchYY 
-(YY 
-	ExceptionYY 
-	exceptionYY %
-)YY% &
-{ZZ 
-throw[[ 
-new[[ 
-	Exception[[ #
-([[# $
-$str[[$ 7
-)[[7 8
-;[[8 9
-}\\ 
-return]] 
-false]] 
-;]] 
-}^^ 	
-public`` 
-void`` 
-editarContrato`` "
-(``" #
-Contrato``# +
-contrato``, 4
-)``4 5
-{aa 	
-gestorAccesoDatosbb 
-.bb 
-abrirConexionbb +
-(bb+ ,
-)bb, -
-;bb- .
-contratoDAOcc 
-.cc 
-editarContratocc &
-(cc& '
-contratocc( 0
-)cc0 1
-;cc1 2
-gestorAccesoDatosdd 
-.dd 
-cerrarConexiondd ,
-(dd, -
-)dd- .
-;dd. /
-}ff 	
-publichh 
-voidhh 
-anularContratohh "
-(hh" #
-Contratohh# +
-contratohh, 4
-)hh4 5
-{ii 	
-gestorAccesoDatosjj 
-.jj 
-abrirConexionjj +
-(jj+ ,
-)jj, -
-;jj- .
-contratoDAOkk 
-.kk 
-anularContratokk &
-(kk& '
-contratokk' /
-)kk/ 0
-;kk0 1
-gestorAccesoDatosll 
-.ll 
-cerrarConexionll ,
-(ll, -
-)ll- .
-;ll. /
-}nn 	
-publicoo 
-Afpoo 
-	buscarAfpoo 
-(oo 
-stringoo #
-nombreoo$ *
-)oo* +
-{pp 	
-gestorAccesoDatosqq 
-.qq 
-abrirConexionqq +
-(qq+ ,
-)qq, -
-;qq- .
-Afprr 
-afprr 
-=rr 
-afpDAOrr 
-.rr 
-buscarPorCodigorr ,
-(rr, -
-nombrerr- 3
-)rr3 4
-;rr4 5
-gestorAccesoDatosss 
-.ss 
-cerrarConexionss ,
-(ss, -
-)ss- .
-;ss. /
-returnuu 
-afpuu 
-;uu 
-}vv 	
-}ww 
-}xx ‰A
+}== 
+}>> 	
+public@@ 
+Contrato@@  
+buscarUltimoContrato@@ ,
+(@@, -
+String@@- 3
+Dni@@4 7
+)@@7 8
+{AA 	
+gestorAccesoDatosBB 
+.BB 
+abrirConexionBB +
+(BB+ ,
+)BB, -
+;BB- .
+ContratoCC 
+contratoCC 
+=CC 
+contratoDAOCC  +
+.CC+ , 
+buscarUltimoContratoCC, @
+(CC@ A
+DniCCA D
+)CCD E
+;CCE F
+gestorAccesoDatosDD 
+.DD 
+cerrarConexionDD ,
+(DD, -
+)DD- .
+;DD. /
+returnFF 
+contratoFF 
+;FF 
+}GG 	
+publicJJ 
+BooleanJJ 
+guardarContratoJJ &
+(JJ& '
+ContratoJJ' /
+contratoJJ0 8
+,JJ8 9
+EmpleadoJJ: B
+empleadoJJC K
+,JJK L
+AfpJJM P
+afpJJQ T
+)JJT U
+{KK 	
+RegistroDeContratoLL 
+registroDeContratoLL 1
+=LL2 3
+newLL4 7
+RegistroDeContratoLL8 J
+(LLJ K
+)LLK L
+;LLL M
+tryNN 
+{NN 
+ifOO 
+(OO 
+registroDeContratoOO &
+.OO& '
+validarContratoOO' 6
+(OO6 7
+contratoOO7 ?
+,OO? @
+empleadoOOA I
+,OOI J
+afpOOK N
+)OON O
+)OOO P
+{PP 
+gestorAccesoDatosRR %
+.RR% &
+abrirConexionRR& 3
+(RR3 4
+)RR4 5
+;RR5 6
+contratoDAOSS 
+.SS  
+crearContratoSS  -
+(SS- .
+contratoSS. 6
+,SS6 7
+empleadoSS8 @
+,SS@ A
+afpSSB E
+)SSE F
+;SSF G
+gestorAccesoDatosTT %
+.TT% &
+cerrarConexionTT& 4
+(TT4 5
+)TT5 6
+;TT6 7
+returnUU 
+trueUU 
+;UU  
+}VV 
+}WW 
+catchXX 
+(XX 
+	ExceptionXX 
+)XX 
+{YY 
+throwZZ 
+newZZ 
+	ExceptionZZ #
+(ZZ# $
+$strZZ$ 7
+)ZZ7 8
+;ZZ8 9
+}[[ 
+return\\ 
+false\\ 
+;\\ 
+}]] 	
+public__ 
+void__ 
+editarContrato__ "
+(__" #
+Contrato__# +
+contrato__, 4
+)__4 5
+{`` 	
+gestorAccesoDatosaa 
+.aa 
+abrirConexionaa +
+(aa+ ,
+)aa, -
+;aa- .
+contratoDAObb 
+.bb 
+editarContratobb &
+(bb& '
+contratobb( 0
+)bb0 1
+;bb1 2
+gestorAccesoDatoscc 
+.cc 
+cerrarConexioncc ,
+(cc, -
+)cc- .
+;cc. /
+}ee 	
+publicgg 
+voidgg 
+anularContratogg "
+(gg" #
+Contratogg# +
+contratogg, 4
+)gg4 5
+{hh 	
+gestorAccesoDatosii 
+.ii 
+abrirConexionii +
+(ii+ ,
+)ii, -
+;ii- .
+contratoDAOjj 
+.jj 
+anularContratojj &
+(jj& '
+contratojj' /
+)jj/ 0
+;jj0 1
+gestorAccesoDatoskk 
+.kk 
+cerrarConexionkk ,
+(kk, -
+)kk- .
+;kk. /
+}mm 	
+publicnn 
+Afpnn 
+	buscarAfpnn 
+(nn 
+stringnn #
+nombrenn$ *
+)nn* +
+{oo 	
+gestorAccesoDatospp 
+.pp 
+abrirConexionpp +
+(pp+ ,
+)pp, -
+;pp- .
+Afpqq 
+afpqq 
+=qq 
+afpDAOqq 
+.qq 
+buscarPorCodigoqq ,
+(qq, -
+nombreqq- 3
+)qq3 4
+;qq4 5
+gestorAccesoDatosrr 
+.rr 
+cerrarConexionrr ,
+(rr, -
+)rr- .
+;rr. /
+returntt 
+afptt 
+;tt 
+}uu 	
+}vv 
+}ww ‰A
 gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaAplicacion\Servicios\ProcesarPagoServicio.cs
 	namespace 	
 CapaAplicacion

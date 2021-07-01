@@ -12,66 +12,24 @@
       },
       "results": [
         {
-          "ruleId": "CS0162",
+          "ruleId": "CS0649",
           "level": "warning",
-          "message": "Se detectó código inaccesible",
+          "message": "El campo 'ProcesarPagoServicio.empleadoDAO' nunca se asigna y siempre tendrá el valor predeterminado null",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarPagoServicio.cs",
                 "region": {
-                  "startLine": 62,
-                  "startColumn": 13,
-                  "endLine": 62,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'exception' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 29,
-                  "endLine": 58,
+                  "startLine": 26,
+                  "startColumn": 27,
+                  "endLine": 26,
                   "endColumn": 38
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'exception' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 29,
-                  "endLine": 89,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
+            "warningLevel": 4
           }
         },
         {
@@ -96,24 +54,87 @@
           }
         },
         {
-          "ruleId": "CS0649",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "El campo 'ProcesarPagoServicio.empleadoDAO' nunca se asigna y siempre tendrá el valor predeterminado null",
+          "message": "Make 'gestorAccesoDatos' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarPagoServicio.cs",
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
                 "region": {
-                  "startLine": 26,
+                  "startLine": 15,
                   "startColumn": 27,
-                  "endLine": 26,
-                  "endColumn": 38
+                  "endLine": 15,
+                  "endColumn": 44
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 4
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'contratoDAO' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 29,
+                  "endLine": 18,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'empleadoDAO' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 29,
+                  "endLine": 20,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'afpDAO' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -222,90 +243,6 @@
           }
         },
         {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'gestorAccesoDatos' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 27,
-                  "endLine": 15,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'contratoDAO' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 29,
-                  "endLine": 18,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'empleadoDAO' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 29,
-                  "endLine": 20,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'afpDAO' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3459",
           "level": "warning",
           "message": "Remove unassigned field 'empleadoDAO', or set its value.",
@@ -339,6 +276,27 @@
                   "startColumn": 22,
                   "endLine": 27,
                   "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 23,
+                  "endLine": 90,
+                  "endColumn": 57
                 }
               }
             }
@@ -409,56 +367,9 @@
           "properties": {
             "warningLevel": 1
           }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Documents/UPN/SolucionNominaSoft/SolucionNominaSoft/CapaAplicacion/Servicios/ProcesarContratoServicio.cs",
-                "region": {
-                  "startLine": 91,
-                  "startColumn": 23,
-                  "endLine": 91,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
         }
       ],
       "rules": {
-        "CS0162": {
-          "id": "CS0162",
-          "shortDescription": "Se detectó código inaccesible",
-          "defaultLevel": "warning",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
-        "CS0168": {
-          "id": "CS0168",
-          "shortDescription": "La variable está declarada pero nunca se usa",
-          "defaultLevel": "warning",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
         "CS0649": {
           "id": "CS0649",
           "shortDescription": "El campo nunca se asigna y siempre tendrá su valor predeterminado",

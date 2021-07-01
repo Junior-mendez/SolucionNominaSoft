@@ -12,14 +12,10 @@ namespace CapaPersistencia.ADO_SQLServer
     public class BoletaDePagoDAO :IBoleta
     {
         private GestorSQL gestorSQL;
-        //private ContratoDAO _contratoDao;
-        //private PeriodoDePagoDAO _periodoDePagoDAO;
-        //private ConceptoDeIngresoDescuentoDAO conceptoDeIngresoDescuentoDAO;
-        //private EmpleadoDAO empleadoDAO;
 
-        public BoletaDePagoDAO(IGestorAccesoADatos gestorSQL)// debe ser del tipo interfaz para hacerlo de tipo generico
+        public BoletaDePagoDAO(IGestorAccesoADatos gestorSQL)
         {
-            this.gestorSQL = (GestorSQL)gestorSQL; // (GestorSQL) el objeto de tipo interfaz se hace un moldeo al tipo original
+            this.gestorSQL = (GestorSQL)gestorSQL; 
             
         }
        

@@ -1,8 +1,6 @@
 p
 gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormBoletasPago.csutf-8{
-pD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormBoletasPago.Designer.csutf-8m
-dD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormContrato.csutf-8x
-mD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormContrato.Designer.csutf-8i
+pD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormBoletasPago.Designer.csutf-8i
 `D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormMenu.csutf-8t
 iD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormMenu.Designer.csutf-8q
 hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormProcesarPago.csutf-8|

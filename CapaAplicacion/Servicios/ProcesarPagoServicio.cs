@@ -29,7 +29,7 @@ namespace CapaAplicacion.Servicios
 
         public ProcesarPagoServicio()
         {
-            FabricaAbstracta fabricaAbstracta = FabricaAbstracta.crearInstancia();//devuelve una instancia de una fabrica concreta 
+            FabricaAbstracta fabricaAbstracta = FabricaAbstracta.crearInstancia();
             
             gestorAccesoDatos = fabricaAbstracta.crearGestorAccesoDatos();
 

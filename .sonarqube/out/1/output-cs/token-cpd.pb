@@ -215,49 +215,106 @@ hD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQL
 	GestorSQL 
 	gestorSQL #
 ;# $
-public 
-BoletaDePagoDAO 
-( 
-IGestorAccesoADatos 2
-	gestorSQL3 <
-)< =
-{ 	
-this 
-. 
-	gestorSQL 
-= 
-( 
-	GestorSQL '
-)' (
-	gestorSQL( 1
-;1 2
-} 	
-public 
-void 
-guardarBoleta !
-(! "
-BoletaDePago" .
-boleta/ 5
-)5 6
-{ 	
-string 
-sqlProcedure 
-=  !
-$str" 9
-;9 :
-try 
-{ 
+public 
+BoletaDePagoDAO 
+( 
+IGestorAccesoADatos 2
+	gestorSQL3 <
+)< =
+{ 	
+this 
+. 
+	gestorSQL 
+= 
+( 
+	GestorSQL '
+)' (
+	gestorSQL( 1
+;1 2
+} 	
+public 
+void 
+guardarBoleta !
+(! "
+BoletaDePago" .
+boleta/ 5
+)5 6
+{ 	
+string 
+sqlProcedure 
+=  !
+$str" 9
+;9 :
+try 
+{ 
 
-SqlCommand   
-comando   "
-=  # $
-	gestorSQL  % .
-.  . /)
-obtenerComandoDeProcedimiento  / L
-(  L M
-sqlProcedure  M Y
-)  Y Z
-;  Z [
+SqlCommand 
+comando "
+=# $
+	gestorSQL% .
+.. /)
+obtenerComandoDeProcedimiento/ L
+(L M
+sqlProcedureM Y
+)Y Z
+;Z [
+comando 
+. 
+
+Parameters "
+." #
+AddWithValue# /
+(/ 0
+$str0 E
+,E F
+boletaG M
+.M N
+AsignacionFamiliarN `
+)` a
+;a b
+comando 
+. 
+
+Parameters "
+." #
+AddWithValue# /
+(/ 0
+$str0 A
+,A B
+boletaC I
+.I J
+FechaDeEmisionJ X
+)X Y
+;Y Z
+comando 
+. 
+
+Parameters "
+." #
+AddWithValue# /
+(/ 0
+$str0 ?
+,? @
+boletaA G
+.G H
+SueldoBasicoH T
+)T U
+;U V
+comando   
+.   
+
+Parameters   "
+.  " #
+AddWithValue  # /
+(  / 0
+$str  0 =
+,  = >
+boleta  ? E
+.  E F
+
+SueldoNeto  F P
+)  P Q
+;  Q R
 comando!! 
 .!! 
 
@@ -265,13 +322,13 @@ Parameters!! "
 .!!" #
 AddWithValue!!# /
 (!!/ 0
-$str!!0 E
-,!!E F
-boleta!!G M
-.!!M N
-AsignacionFamiliar!!N `
-)!!` a
-;!!a b
+$str!!0 6
+,!!6 7
+boleta!!8 >
+.!!> ?
+DescuentoAfp!!? K
+)!!K L
+;!!L M
 comando"" 
 ."" 
 
@@ -279,13 +336,13 @@ Parameters"" "
 .""" #
 AddWithValue""# /
 (""/ 0
-$str""0 A
-,""A B
-boleta""C I
-.""I J
-FechaDeEmision""J X
-)""X Y
-;""Y Z
+$str""0 ?
+,""? @
+boleta""A G
+.""G H
+TotalDeHoras""H T
+)""T U
+;""U V
 comando## 
 .## 
 
@@ -293,13 +350,13 @@ Parameters## "
 .##" #
 AddWithValue### /
 (##/ 0
-$str##0 ?
-,##? @
-boleta##A G
-.##G H
-SueldoBasico##H T
-)##T U
-;##U V
+$str##0 D
+,##D E
+boleta##F L
+.##L M
+TotalDeDescuentos##M ^
+)##^ _
+;##_ `
 comando$$ 
 .$$ 
 
@@ -307,14 +364,13 @@ Parameters$$ "
 .$$" #
 AddWithValue$$# /
 ($$/ 0
-$str$$0 =
-,$$= >
-boleta$$? E
-.$$E F
-
-SueldoNeto$$F P
-)$$P Q
-;$$Q R
+$str$$0 B
+,$$B C
+boleta$$D J
+.$$J K
+TotalDeIngresos$$K Z
+)$$Z [
+;$$[ \
 comando%% 
 .%% 
 
@@ -322,13 +378,15 @@ Parameters%% "
 .%%" #
 AddWithValue%%# /
 (%%/ 0
-$str%%0 6
-,%%6 7
-boleta%%8 >
-.%%> ?
-DescuentoAfp%%? K
-)%%K L
-;%%L M
+$str%%0 A
+,%%A B
+boleta%%C I
+.%%I J
+Contrato%%J R
+.%%R S
+Codigo%%S Y
+)%%Y Z
+;%%Z [
 comando&& 
 .&& 
 
@@ -336,13 +394,17 @@ Parameters&& "
 .&&" #
 AddWithValue&&# /
 (&&/ 0
-$str&&0 ?
-,&&? @
-boleta&&A G
-.&&G H
-TotalDeHoras&&H T
-)&&T U
-;&&U V
+$str&&0 O
+,&&O P
+boleta&&Q W
+.&&W X&
+ConceptoDeIngresoDescuento&&X r
+.&&r s
+CodigoConcepto	&&s Å
+)
+&&Å Ç
+;
+&&Ç É
 comando'' 
 .'' 
 
@@ -350,97 +412,35 @@ Parameters'' "
 .''" #
 AddWithValue''# /
 (''/ 0
-$str''0 D
-,''D E
-boleta''F L
-.''L M
-TotalDeDescuentos''M ^
-)''^ _
-;''_ `
-comando(( 
-.(( 
-
-Parameters(( "
-.((" #
-AddWithValue((# /
-(((/ 0
-$str((0 B
-,((B C
-boleta((D J
-.((J K
-TotalDeIngresos((K Z
-)((Z [
-;(([ \
+$str''0 B
+,''B C
+boleta''D J
+.''J K
+PeriodoDePago''K X
+.''X Y
+CodigoPeriodo''Y f
+)''f g
+;''g h
 comando)) 
-.)) 
-
-Parameters)) "
-.))" #
-AddWithValue))# /
-())/ 0
-$str))0 A
-,))A B
-boleta))C I
-.))I J
-Contrato))J R
-.))R S
-Codigo))S Y
-)))Y Z
-;))Z [
-comando** 
-.** 
-
-Parameters** "
-.**" #
-AddWithValue**# /
-(**/ 0
-$str**0 O
-,**O P
-boleta**Q W
-.**W X&
-ConceptoDeIngresoDescuento**X r
-.**r s
-CodigoConcepto	**s Å
-)
-**Å Ç
-;
-**Ç É
-comando++ 
-.++ 
-
-Parameters++ "
-.++" #
-AddWithValue++# /
-(++/ 0
-$str++0 B
-,++B C
-boleta++D J
-.++J K
-PeriodoDePago++K X
-.++X Y
-CodigoPeriodo++Y f
-)++f g
-;++g h
-comando-- 
-.-- 
-ExecuteNonQuery-- '
-(--' (
-)--( )
-;--) *
-}.. 
-catch// 
-(// 
-	Exception// 
-err//  
-)//  !
-{00 
-throw11 
-err11 
-;11 
-}22 
-}44 	
-}77 
-}88 Ÿ/
+.)) 
+ExecuteNonQuery)) '
+())' (
+)))( )
+;))) *
+}** 
+catch++ 
+(++ 
+	Exception++ 
+err++  
+)++  !
+{,, 
+throw-- 
+err-- 
+;-- 
+}.. 
+}00 	
+}33 
+}44 Ÿ/
 vD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPersistencia\ADO_SQLServer\ConceptoDeIngresoDescuentoDAO.cs
 	namespace 	
 CapaPersistencia

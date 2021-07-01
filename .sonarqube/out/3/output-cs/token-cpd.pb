@@ -28,234 +28,155 @@ gD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.Windows
 (  
 )  !
 ;! "
-foreach 
-( 
-BoletaDePago  
-boleta! '
-in( *
-boletas+ 2
-)2 3
-{ 
-Empleado 
-empleado !
+foreach 
+( 
+BoletaDePago  
+boleta! '
+in( *
+boletas+ 2
+)2 3
+{ 
+Empleado 
+empleado !
+=" #
+new$ '
+Empleado( 0
+(0 1
+)1 2
+;2 3
+Contrato 
+contrato !
 =" #
 new$ '
-Empleado( 0
-(0 1
-)1 2
-;2 3
-Contrato 
-contrato !
-=" #
-new$ '
-Contrato( 0
-(0 1
-empleado1 9
-)9 :
-;: ;
+Contrato( 0
+(0 1
+empleado1 9
+)9 :
+;: ;
+Double 
+	totalHora  
+=! "
+boleta# )
+.) *
+TotalDeHoras* 6
+;6 7
 Double 
-	totalHora  
+	valorHora  
 =! "
 boleta# )
-.) *
-TotalDeHoras* 6
-;6 7
-Double 
-	valorHora  
-=! "
-boleta# )
-.) *
-Contrato* 2
-.2 3
-PagoPorHora3 >
-;> ?
-Double 
-sueldoBasico #
-=$ %
-boleta& ,
-., -
-SueldoBasico- 9
-;9 :
-Double 
-totalIngresos $
-=% &
-boleta' -
-.- .
-TotalDeIngresos. =
-;= >
-Double 
-totalDescuentos &
-=' (
-boleta) /
-./ 0
-TotalDeDescuentos0 A
-;A B
-Double 
+.) *
+Contrato* 2
+.2 3
+PagoPorHora3 >
+;> ?
+Double 
+sueldoBasico #
+=$ %
+boleta& ,
+., -
+SueldoBasico- 9
+;9 :
+Double 
+totalIngresos $
+=% &
+boleta' -
+.- .
+TotalDeIngresos. =
+;= >
+Double 
+totalDescuentos &
+=' (
+boleta) /
+./ 0
+TotalDeDescuentos0 A
+;A B
+Double 
 
-sueldoNeto !
-=" #
-boleta$ *
-.* +
+sueldoNeto !
+=" #
+boleta$ *
+.* +
 
-SueldoNeto+ 5
-;5 6
-String 
-dniEmpleado "
-=# $
-boleta% +
-.+ ,
-Contrato, 4
-.4 5
-Empleado5 =
-.= >
-Dni> A
-;A B
-String   
-nombre   
-=   
-boleta    &
-.  & '
-Contrato  ' /
-.  / 0
-Empleado  0 8
-.  8 9
-Nombre  9 ?
-;  ? @
-dataGridBoletas!! 
-.!!  
-Rows!!  $
-.!!$ %
-Add!!% (
-(!!( )
-dniEmpleado!!) 4
-,!!4 5
-nombre!!6 <
-,!!< =
-	totalHora!!> G
-,!!G H
-	valorHora!!I R
-,!!R S
-sueldoBasico!!T `
-,!!` a
-totalIngresos!!b o
-,!!o p
-totalDescuentos	!!q Ä
+SueldoNeto+ 5
+;5 6
+String 
+dniEmpleado "
+=# $
+boleta% +
+.+ ,
+Contrato, 4
+.4 5
+Empleado5 =
+.= >
+Dni> A
+;A B
+String 
+nombre 
+= 
+boleta  &
+.& '
+Contrato' /
+./ 0
+Empleado0 8
+.8 9
+Nombre9 ?
+;? @
+dataGridBoletas   
+.    
+Rows    $
+.  $ %
+Add  % (
+(  ( )
+dniEmpleado  ) 4
+,  4 5
+nombre  6 <
+,  < =
+	totalHora  > G
+,  G H
+	valorHora  I R
+,  R S
+sueldoBasico  T `
+,  ` a
+totalIngresos  b o
+,  o p
+totalDescuentos	  q Ä
 ,
-!!Ä Å
+  Ä Å
 
 sueldoNeto
-!!Ç å
+  Ç å
 )
-!!å ç
+  å ç
 ;
-!!ç é
-}"" 
-}$$ 	
-private&& 
-void&& *
-dataGridView1_CellContentClick&& 3
-(&&3 4
-object&&4 :
-sender&&; A
-,&&A B%
-DataGridViewCellEventArgs&&C \
-e&&] ^
-)&&^ _
-{'' 	
-})) 	
-private++ 
-void++  
-FormBoletasPago_Load++ )
-(++) *
-object++* 0
-sender++1 7
-,++7 8
-	EventArgs++9 B
-e++C D
-)++D E
-{,, 	
-}.. 	
-}// 
-}00 ã
-dD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormContrato.cs
-	namespace 	
-CapaPresentacion
- 
-. 
-WindowsForms '
-{ 
-public 
-
-partial 
-class 
-FormContrato %
-:& '
-Form( ,
-{ 
-Empleado 
-empleado 
-= 
-new 
-Empleado  (
-(( )
-)) *
-;* +$
-ProcesarContratoServicio  
-gestionarContrato! 2
-=3 4
-new5 8$
-ProcesarContratoServicio9 Q
-(Q R
-)R S
-;S T
-public 
-FormContrato 
-( 
-) 
-{ 	
-InitializeComponent 
-(  
-)  !
-;! "
-} 	
-private 
-void 
-FormContrato_Load &
-(& '
-object' -
-sender. 4
-,4 5
-	EventArgs6 ?
-e@ A
-)A B
-{ 	
-} 	
-private 
-void 
-label1_Click !
-(! "
-object" (
-sender) /
-,/ 0
-	EventArgs1 :
-e; <
-)< =
-{ 	
-}!! 	
-private## 
-void##  
-textBox4_TextChanged## )
-(##) *
-object##* 0
-sender##1 7
-,##7 8
-	EventArgs##9 B
-e##C D
-)##D E
-{$$ 	
-}&& 	
-}'' 
-}(( ¿
+  ç é
+}!! 
+}## 	
+private%% 
+void%% *
+dataGridView1_CellContentClick%% 3
+(%%3 4
+object%%4 :
+sender%%; A
+,%%A B%
+DataGridViewCellEventArgs%%C \
+e%%] ^
+)%%^ _
+{&& 	
+}(( 	
+private** 
+void**  
+FormBoletasPago_Load** )
+(**) *
+object*** 0
+sender**1 7
+,**7 8
+	EventArgs**9 B
+e**C D
+)**D E
+{++ 	
+},, 	
+}-- 
+}.. ¿
 `D:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormMenu.cs
 	namespace 	
 CapaPresentacion
@@ -579,7 +500,7 @@ MessageBox@@ 
 {EE 	
 }GG 	
 }HH 
-}II ŸÇ
+}II ∆Ç
 mD:\Documents\UPN\SolucionNominaSoft\SolucionNominaSoft\CapaPresentacion.WindowsForms\FormRegistrarContrato.cs
 	namespace 	
 CapaPresentacion
@@ -1774,11 +1695,9 @@ MessageBox
 (
 «« 
 	Exception
-«« 
-exc
-««  
+«« 
 )
-««  !
+«« 
 {
 »» 
 

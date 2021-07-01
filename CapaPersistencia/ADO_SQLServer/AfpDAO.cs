@@ -13,9 +13,9 @@ namespace CapaPersistencia.ADO_SQLServer
     public class AfpDAO :IAfp
     {
         private GestorSQL gestorSQL;
-        public AfpDAO(IGestorAccesoADatos gestorSQL)// debe ser del tipo interfaz para hacerlo de tipo generico
+        public AfpDAO(IGestorAccesoADatos gestorSQL)
         {
-            this.gestorSQL = (GestorSQL)gestorSQL; // (GestorSQL) el objeto de tipo interfaz se hace un moldeo al tipo original
+            this.gestorSQL = (GestorSQL)gestorSQL; 
         }
 
        
